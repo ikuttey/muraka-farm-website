@@ -1,0 +1,956 @@
+@font-face {
+  font-family: "Faruma";
+  src: url("../fonts/Faruma.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.project-portfolio {
+  background: var(--paper);
+}
+
+.project-portfolio-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.project-portfolio-card {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  flex-direction: column;
+  border-top: 0;
+}
+
+.project-portfolio-card__header {
+  display: flex;
+  min-height: 250px;
+  padding: 26px;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  color: var(--paper);
+}
+
+.project-portfolio-card__header--dhirun {
+  background:
+    linear-gradient(rgba(7, 29, 46, 0.28), rgba(7, 29, 46, 0.84)),
+    url("../images/dhirun-reef-frame.png") center 54% / cover no-repeat;
+}
+
+.project-portfolio-card__header--dharavandhoo {
+  background:
+    linear-gradient(rgba(7, 29, 46, 0.22), rgba(7, 29, 46, 0.84)),
+    url("../images/dharavandhoo-muraka-project-sign.jpg") center 48% / cover no-repeat;
+}
+
+.project-portfolio-card__header .meta {
+  color: var(--bright);
+  text-shadow: 0 1px 8px rgba(3, 18, 29, 0.72);
+}
+
+.project-portfolio-card__header h3 {
+  color: var(--paper);
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+  text-shadow: 0 2px 12px rgba(3, 18, 29, 0.72);
+}
+
+.project-portfolio-card__body {
+  display: flex;
+  padding: 26px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.project-portfolio-card__body p:first-child {
+  margin-top: 0;
+}
+
+.project-portfolio-card__body a {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .project-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-portfolio-card__header {
+    min-height: 230px;
+  }
+}
+
+.project-video-area {
+  width: 100%;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.project-video-heading {
+  margin-bottom: 14px;
+  color: var(--navy);
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.project-youtube-shorts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 400px));
+  justify-content: center;
+  gap: 16px;
+}
+
+.project-youtube-short {
+  width: min(100%, 400px);
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+
+.project-youtube-short-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.project-youtube-short-frame iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.project-youtube-short figcaption {
+  padding: 10px 12px;
+  font: 500 0.72rem/1.4 "IBM Plex Mono", monospace;
+}
+
+.project-youtube-short a {
+  color: var(--deep);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.project-youtube-short a:hover,
+.project-youtube-short a:focus-visible {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+#dharavandhoo-muraka-project .bank-project-introduction {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  padding-block: clamp(40px, 6vw, 72px);
+  padding-inline: max(32px, calc((100vw - 1180px) / 2 + 32px));
+  background:
+    linear-gradient(90deg, rgba(10, 38, 58, 0.66) 0%, rgba(10, 38, 58, 0.5) 58%, rgba(10, 38, 58, 0.28) 100%),
+    url("../images/dharavandhoo-muraka-project-sign.jpg") center 51% / cover no-repeat;
+  color: var(--paper);
+}
+
+#dharavandhoo-muraka-project .bank-project-introduction .tag {
+  color: var(--bright);
+}
+
+#dharavandhoo-muraka-project .bank-project-introduction h2 {
+  max-width: 16ch;
+  text-shadow: 0 2px 12px rgba(5, 24, 38, 0.42);
+}
+
+#dharavandhoo-muraka-project .bank-project-introduction > p {
+  max-width: 88ch;
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 1px 8px rgba(5, 24, 38, 0.5);
+}
+
+#dharavandhoo-muraka-project .bank-project-introduction > p + p {
+  margin-top: 16px;
+}
+
+#dharavandhoo-muraka-project .bank-project-summary,
+#dharavandhoo-muraka-project .bank-project-purpose-grid,
+#dharavandhoo-muraka-project .bank-project-implementation-grid,
+#dharavandhoo-muraka-project .bank-project-status-grid {
+  display: grid;
+  gap: 16px;
+}
+
+#dharavandhoo-muraka-project .bank-project-summary {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 36px;
+}
+
+#dharavandhoo-muraka-project .bank-project-summary-card,
+#dharavandhoo-muraka-project .bank-project-purpose-card,
+#dharavandhoo-muraka-project .bank-project-implementation-card,
+#dharavandhoo-muraka-project .bank-project-status-card,
+#dharavandhoo-muraka-project .bank-project-process-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--blue);
+  border-radius: 6px;
+  background: var(--paper);
+  overflow-wrap: anywhere;
+}
+
+#dharavandhoo-muraka-project .bank-project-summary-card {
+  padding: 24px 20px;
+}
+
+#dharavandhoo-muraka-project .bank-project-card-label,
+#dharavandhoo-muraka-project .bank-project-step-label {
+  display: block;
+  color: var(--deep);
+  font: 600 0.68rem/1.35 "IBM Plex Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#dharavandhoo-muraka-project .bank-project-summary-card h3 {
+  margin-top: 13px;
+  color: var(--navy);
+  font-size: clamp(1.45rem, 1.85vw, 1.9rem);
+  line-height: 1.08;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+#dharavandhoo-muraka-project .bank-project-summary-card p,
+#dharavandhoo-muraka-project .bank-project-purpose-card p,
+#dharavandhoo-muraka-project .bank-project-implementation-card li,
+#dharavandhoo-muraka-project .bank-project-status-card p,
+#dharavandhoo-muraka-project .bank-project-process-card > p,
+#dharavandhoo-muraka-project .bank-project-process-card li {
+  color: var(--soft);
+}
+
+#dharavandhoo-muraka-project .bank-project-summary-card p {
+  margin-top: 11px;
+  font-size: 0.88rem;
+}
+
+#dharavandhoo-muraka-project .bank-project-subsection {
+  margin-top: 52px;
+  padding-top: 44px;
+  border-top: 1px solid var(--line);
+}
+
+#dharavandhoo-muraka-project .bank-project-subsection-header {
+  max-width: 860px;
+}
+
+#dharavandhoo-muraka-project .bank-project-subsection-header .tag {
+  margin-bottom: 12px;
+}
+
+#dharavandhoo-muraka-project .bank-project-subsection-header h3,
+#dharavandhoo-muraka-project .bank-project-frame-panel h3 {
+  color: var(--navy);
+  font-size: clamp(1.7rem, 3vw, 2.55rem);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+#dharavandhoo-muraka-project .bank-project-subsection-header p {
+  max-width: 82ch;
+  margin-top: 14px;
+  color: var(--soft);
+}
+
+#dharavandhoo-muraka-project .bank-project-purpose-grid,
+#dharavandhoo-muraka-project .bank-project-implementation-grid,
+#dharavandhoo-muraka-project .bank-project-status-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 28px;
+}
+
+#dharavandhoo-muraka-project .bank-project-purpose-card,
+#dharavandhoo-muraka-project .bank-project-implementation-card,
+#dharavandhoo-muraka-project .bank-project-status-card {
+  padding: 25px 22px;
+}
+
+#dharavandhoo-muraka-project .bank-project-purpose-card h4,
+#dharavandhoo-muraka-project .bank-project-implementation-card h4,
+#dharavandhoo-muraka-project .bank-project-status-card h4,
+#dharavandhoo-muraka-project .bank-project-process-card h4 {
+  color: var(--navy);
+  font: 600 1.15rem/1.25 "Space Grotesk", sans-serif;
+}
+
+#dharavandhoo-muraka-project .bank-project-purpose-card p,
+#dharavandhoo-muraka-project .bank-project-status-card p {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card {
+  position: relative;
+  padding: 24px 20px;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card::before {
+  content: counter(list-item, decimal-leading-zero);
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  color: rgba(20, 50, 74, 0.18);
+  font: 700 1.65rem/1 "Space Grotesk", sans-serif;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card h4 {
+  margin-top: 12px;
+  padding-right: 28px;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card > p {
+  margin-top: 12px;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card h5 {
+  margin-top: 20px;
+  color: var(--deep);
+  font: 600 0.68rem/1.35 "IBM Plex Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card ul,
+#dharavandhoo-muraka-project .bank-project-implementation-card ul {
+  display: grid;
+  gap: 8px;
+  margin-top: 11px;
+  padding: 0;
+  list-style: none;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card li,
+#dharavandhoo-muraka-project .bank-project-implementation-card li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card li::before,
+#dharavandhoo-muraka-project .bank-project-implementation-card li::before {
+  content: "";
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+}
+
+#dharavandhoo-muraka-project .bank-project-process-card .bank-project-permission-note {
+  margin-top: 17px;
+  padding: 11px 12px;
+  border-left: 3px solid var(--blue);
+  background: #e7f1f7;
+  color: var(--navy);
+  font-size: 0.78rem;
+}
+
+#dharavandhoo-muraka-project .bank-project-frame-panel {
+  width: 100vw;
+  max-width: none;
+  margin-top: 52px;
+  margin-left: calc(50% - 50vw);
+  padding-block: clamp(48px, 7vw, 88px);
+  padding-inline: max(32px, calc((100vw - 1180px) / 2 + 32px));
+  background:
+    linear-gradient(90deg, rgba(8, 34, 52, 0.76) 0%, rgba(8, 34, 52, 0.58) 54%, rgba(8, 34, 52, 0.24) 100%),
+    url("../images/dharavandhoo-muraka-frame-work.jpg") center 82% / cover no-repeat;
+}
+
+#dharavandhoo-muraka-project .bank-project-frame-panel h3 {
+  max-width: 16ch;
+  color: var(--paper);
+  text-shadow: 0 2px 12px rgba(5, 24, 38, 0.48);
+}
+
+#dharavandhoo-muraka-project .bank-project-frame-panel p {
+  max-width: 72ch;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 1px 8px rgba(5, 24, 38, 0.55);
+}
+
+#dharavandhoo-muraka-project .bank-project-implementation-card h4 {
+  min-height: 2.5em;
+}
+
+#dharavandhoo-muraka-project .bank-project-status-card .bank-project-card-label {
+  margin-bottom: 13px;
+}
+
+#dharavandhoo-muraka-project .bank-project-status-links {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+#dharavandhoo-muraka-project .bank-project-status-links a {
+  width: fit-content;
+  max-width: 100%;
+  color: var(--deep);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+#dharavandhoo-muraka-project .bank-project-status-links a:hover,
+#dharavandhoo-muraka-project .bank-project-status-links a:focus-visible {
+  color: var(--navy);
+}
+
+@media (max-width: 1100px) {
+  #dharavandhoo-muraka-project .bank-project-process-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  #dharavandhoo-muraka-project .bank-project-summary,
+  #dharavandhoo-muraka-project .bank-project-process-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #dharavandhoo-muraka-project .bank-project-purpose-grid,
+  #dharavandhoo-muraka-project .bank-project-implementation-grid,
+  #dharavandhoo-muraka-project .bank-project-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #dharavandhoo-muraka-project .bank-project-implementation-card h4 {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-youtube-shorts-grid {
+    grid-template-columns: minmax(0, 400px);
+  }
+
+  #dharavandhoo-muraka-project .bank-project-introduction {
+    padding: 36px 24px;
+    background-position: center 48%;
+  }
+
+  #dharavandhoo-muraka-project .bank-project-summary,
+  #dharavandhoo-muraka-project .bank-project-process-list {
+    grid-template-columns: 1fr;
+  }
+
+  #dharavandhoo-muraka-project .bank-project-subsection {
+    margin-top: 42px;
+    padding-top: 34px;
+  }
+
+  #dharavandhoo-muraka-project .bank-project-summary-card,
+  #dharavandhoo-muraka-project .bank-project-purpose-card,
+  #dharavandhoo-muraka-project .bank-project-implementation-card,
+  #dharavandhoo-muraka-project .bank-project-status-card,
+  #dharavandhoo-muraka-project .bank-project-process-card {
+    padding: 22px 18px;
+  }
+
+  #dharavandhoo-muraka-project .bank-project-frame-panel {
+    margin-top: 42px;
+    padding: 42px 24px;
+    background-position: center bottom;
+  }
+}
+
+/* Dhirun programme identity and detailed phase layout */
+#dhirun {
+  overflow: clip;
+  padding-top: 0;
+  background: var(--paper);
+  color: var(--navy);
+}
+
+.dhirun-hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(90deg, rgba(20, 50, 74, 0.98) 0%, rgba(20, 50, 74, 0.92) 52%, rgba(20, 50, 74, 0.68) 100%),
+    url("../images/dhirun logo.jpg");
+  background-position: center, right center;
+  background-size: cover, auto 112%;
+  background-repeat: no-repeat;
+}
+
+#dhirun .dhirun-introduction {
+  width: min(1180px, 100%);
+  max-width: none;
+  margin: 0 auto;
+  padding: clamp(76px, 8vw, 110px) 32px;
+}
+
+.dhirun-eyebrow {
+  display: block;
+  color: var(--bright);
+  font: 600 0.72rem/1.4 "IBM Plex Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dhirun-title {
+  margin-top: 20px;
+  color: var(--paper);
+  font-size: clamp(4.5rem, 14vw, 10rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.dhirun-name {
+  width: fit-content;
+  margin-top: 24px;
+  color: var(--bright);
+  font: 400 clamp(2rem, 4.5vw, 3.5rem)/1.1 "Faruma", "MV Boli", sans-serif;
+}
+
+.dhirun-meaning {
+  margin-top: 14px;
+  color: rgba(242, 248, 252, 0.82);
+  font: 500 clamp(0.9rem, 1.6vw, 1.08rem)/1.5 "IBM Plex Mono", monospace;
+}
+
+.dhirun-intro-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(242, 248, 252, 0.18);
+}
+
+.dhirun-intro-copy p {
+  color: rgba(242, 248, 252, 0.82);
+}
+
+#dhirun .dhirun-collaborators {
+  margin-top: 46px;
+}
+
+#dhirun .dhirun-collaborators .card {
+  border-color: var(--line);
+  border-top-color: var(--blue);
+  background: transparent;
+}
+
+#dhirun .dhirun-collaborators .meta {
+  color: var(--deep);
+}
+
+#dhirun .dhirun-collaborators h3 {
+  color: var(--navy);
+}
+
+#dhirun .dhirun-collaborators p {
+  color: var(--soft);
+}
+
+.dhirun-phases {
+  display: grid;
+  gap: 28px;
+  margin-top: 76px;
+}
+
+.dhirun-phase {
+  min-width: 0;
+  padding: clamp(38px, 5vw, 60px) 0;
+  border-top: 2px solid var(--line);
+  background: transparent;
+}
+
+.dhirun-phase--soft {
+  background: transparent;
+}
+
+.dhirun-phase-header {
+  max-width: 940px;
+}
+
+.dhirun-phase-number {
+  display: block;
+  min-height: 0;
+  margin: 0 0 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(44, 109, 158, 0.2);
+  font: 600 clamp(3.6rem, 8vw, 6.8rem)/0.82 "Space Grotesk", sans-serif;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.dhirun-phase-header h3 {
+  max-width: 22ch;
+  color: var(--navy);
+  font-size: clamp(1.9rem, 4vw, 3.35rem);
+  line-height: 1.04;
+}
+
+.dhirun-phase-statement {
+  margin-top: 16px;
+  color: var(--deep);
+  font: 500 clamp(1rem, 1.8vw, 1.24rem)/1.45 "Space Grotesk", sans-serif;
+}
+
+.dhirun-phase-description {
+  max-width: 88ch;
+  margin-top: 25px;
+  color: var(--soft);
+}
+
+.dhirun-activities {
+  margin-top: 30px;
+}
+
+.dhirun-activities h4,
+.dhirun-media-block > h4 {
+  color: var(--deep);
+  font: 600 0.72rem/1.4 "IBM Plex Mono", monospace;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.dhirun-activities ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+  max-width: 900px;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.dhirun-activities li {
+  position: relative;
+  min-width: 0;
+  padding-left: 17px;
+  color: var(--soft);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.dhirun-activities li::before {
+  content: "";
+  position: absolute;
+  top: 0.58em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+}
+
+.dhirun-phase-note {
+  max-width: 88ch;
+  margin-top: 28px;
+  padding: 15px 17px;
+  border-left: 3px solid var(--bright);
+  background: rgba(10, 31, 47, 0.34);
+  color: rgba(242, 248, 252, 0.82);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.dhirun-phase-note strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--paper);
+  font: 600 0.68rem/1.4 "IBM Plex Mono", monospace;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.dhirun-phase-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 36px;
+  margin-top: 38px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.dhirun-phase-media--single {
+  grid-template-columns: minmax(0, 540px);
+  justify-content: center;
+}
+
+.dhirun-media-block,
+.dhirun-phase-gallery,
+.dhirun-phase-videos,
+.dhirun-phase-photo,
+.dhirun-video {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.dhirun-phase-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.dhirun-phase-photo {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+
+.dhirun-phase-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dhirun-phase-photo figcaption {
+  padding: 10px 12px;
+  color: var(--soft);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.dhirun-phase-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.dhirun-video {
+  margin: 0;
+}
+
+.dhirun-video--short {
+  grid-column: 1 / -1;
+  width: min(100%, 420px);
+  margin-inline: auto;
+}
+
+.dhirun-video--short .dhirun-video-frame {
+  aspect-ratio: 9 / 16;
+}
+
+.dhirun-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: rgba(10, 31, 47, 0.5);
+}
+
+.dhirun-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.dhirun-video figcaption {
+  margin-top: 9px;
+  color: var(--soft);
+  font-size: 0.78rem;
+}
+
+.dhirun-video a {
+  color: var(--deep);
+  overflow-wrap: anywhere;
+}
+
+.dhirun-instagram {
+  grid-column: 1 / -1;
+  width: min(100%, 540px);
+  border: 0;
+  background: transparent;
+}
+
+.dhirun-instagram-frame {
+  width: 100%;
+  min-height: 680px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.dhirun-instagram-frame iframe {
+  display: block;
+  width: 100%;
+  height: 680px;
+  border: 0;
+}
+
+.dhirun-instagram figcaption {
+  margin-top: 9px;
+  padding: 0;
+  color: var(--soft);
+  font-size: 0.78rem;
+}
+
+.dhirun-instagram a {
+  color: var(--deep);
+  overflow-wrap: anywhere;
+}
+
+.dhirun-media-empty {
+  grid-column: 1 / -1;
+  padding: 24px;
+  border: 1px dashed rgba(44, 109, 158, 0.42);
+  color: var(--soft);
+  font-size: 0.86rem;
+  text-align: center;
+}
+
+.dhirun-phase-gallery:has(.dhirun-phase-photo) .dhirun-media-empty,
+.dhirun-phase-videos:has(.dhirun-video) .dhirun-media-empty {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .dhirun-intro-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .dhirun-phase-media {
+    grid-template-columns: 1fr;
+  }
+
+  .dhirun-phase-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  #dhirun .dhirun-introduction {
+    padding: 64px 20px;
+  }
+
+  .dhirun-hero {
+    background-image:
+      linear-gradient(rgba(20, 50, 74, 0.9), rgba(20, 50, 74, 0.9)),
+      url("../images/dhirun logo.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dhirun-title {
+    font-size: clamp(3.6rem, 21vw, 5.5rem);
+  }
+
+  .dhirun-phases {
+    gap: 18px;
+    margin-top: 54px;
+  }
+
+  .dhirun-phase {
+    padding: 34px 0;
+  }
+
+  .dhirun-phase-number {
+    font-size: clamp(3rem, 17vw, 4.6rem);
+  }
+
+  .dhirun-activities ul,
+  .dhirun-phase-gallery,
+  .dhirun-phase-videos {
+    grid-template-columns: 1fr;
+  }
+
+  .dhirun-phase-media {
+    gap: 30px;
+  }
+
+  .dhirun-media-empty {
+    padding: 20px 16px;
+  }
+
+  .dhirun-instagram-frame {
+    min-height: 620px;
+  }
+
+  .dhirun-instagram-frame iframe {
+    height: 620px;
+  }
+}
+.projects-hero {
+  display: flex;
+  min-height: 640px;
+  align-items: center;
+  padding: 116px 0 96px;
+  border: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 29, 46, 0.91) 0%, rgba(7, 29, 46, 0.72) 52%, rgba(7, 29, 46, 0.48) 100%),
+    url("../images/photo_2026-08-14_22-04-03.jpg") center 48% / cover no-repeat,
+    var(--navy);
+  color: var(--paper);
+}
+
+.projects-hero::after {
+  display: none;
+}
+
+.projects-hero .tag {
+  color: var(--bright);
+}
+
+.projects-hero h1 {
+  max-width: 13ch;
+  color: var(--paper);
+  text-shadow: 0 2px 16px rgba(3, 18, 29, 0.6);
+}
+
+.projects-hero p {
+  max-width: 64ch;
+  color: rgba(242, 248, 252, 0.9);
+  text-shadow: 0 1px 10px rgba(3, 18, 29, 0.68);
+}
+
+@media (max-width: 600px) {
+  .projects-hero {
+    min-height: 600px;
+    padding: 90px 20px 70px;
+    background:
+      linear-gradient(rgba(7, 29, 46, 0.7), rgba(7, 29, 46, 0.78)),
+      url("../images/photo_2026-08-14_22-04-03.jpg") center 48% / cover no-repeat,
+      var(--navy);
+  }
+}

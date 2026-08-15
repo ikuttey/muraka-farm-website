@@ -1,0 +1,399 @@
+.about-hero {
+  display: flex;
+  min-height: 660px;
+  align-items: center;
+  border-bottom: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 29, 46, 0.9) 0%, rgba(7, 29, 46, 0.72) 54%, rgba(7, 29, 46, 0.42) 100%),
+    url("../images/muraka-farm-team.jpg") center 48% / cover no-repeat,
+    var(--navy);
+  color: var(--paper);
+}
+
+.about-hero::after {
+  display: none;
+}
+
+.about-hero-grid {
+  display: block;
+}
+
+.about-hero-grid .hero-inner {
+  width: auto;
+  max-width: 780px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-hero .tag {
+  color: var(--bright);
+}
+
+.about-hero h1 {
+  color: var(--paper);
+  text-shadow: 0 2px 18px rgba(3, 18, 29, 0.68);
+}
+
+.about-hero p {
+  color: rgba(242, 248, 252, 0.92);
+  text-shadow: 0 1px 12px rgba(3, 18, 29, 0.72);
+}
+
+.location-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about-partner-groups {
+  display: grid;
+  gap: 34px;
+}
+
+.about-partner-group {
+  padding: 28px;
+  border: 1px solid rgba(242, 248, 252, 0.16);
+  border-radius: 7px;
+  background: rgba(242, 248, 252, 0.045);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-partner-group--dharavandhoo {
+  background:
+    linear-gradient(90deg, rgba(7, 29, 46, 0.92), rgba(7, 29, 46, 0.66)),
+    url("../images/dharavandhoo-muraka-project-sign.jpg") center 48% / cover no-repeat;
+}
+
+.about-partner-group--dhirun {
+  background:
+    linear-gradient(90deg, rgba(7, 29, 46, 0.92), rgba(7, 29, 46, 0.66)),
+    url("../images/dhirun-reef-frame.png") center 54% / cover no-repeat;
+}
+
+.about-partner-group__title {
+  margin-bottom: 20px;
+  color: var(--paper);
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+}
+
+.about-partner-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-partner-grid--single {
+  grid-template-columns: minmax(0, 520px);
+}
+
+.about-partner-grid .card {
+  height: 100%;
+  border-color: rgba(242, 248, 252, 0.22);
+  background: rgba(7, 29, 46, 0.76);
+  backdrop-filter: blur(3px);
+}
+
+.about-partner-grid .card h3 {
+  color: var(--paper);
+}
+
+.about-partner-grid .card a {
+  color: var(--bright);
+}
+
+.location-photo {
+  position: relative;
+  height: clamp(300px, 52vw, 620px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--tint);
+}
+
+.location-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-caption {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  padding: 10px 13px;
+  border-radius: 3px;
+  background: rgba(20, 50, 74, 0.88);
+  color: white;
+  font: 500 0.7rem "IBM Plex Mono", monospace;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-grid > li {
+  display: flex;
+  flex: 0 0 calc((100% - 36px) / 3);
+  height: 280px;
+  max-width: 360px;
+  min-width: 0;
+}
+
+.team-grid .team-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  padding: 28px 26px;
+}
+
+.team-grid .team-profile-card h4 {
+  font-size: 1.14rem;
+}
+
+.team-grid .team-profile-card__position {
+  font-size: 0.74rem;
+}
+
+.team-profile-card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 330px);
+  min-width: 0;
+  padding: 25px 24px 23px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--blue);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(20, 50, 74, 0.08);
+  text-align: center;
+}
+
+.team-profile-card h4 {
+  margin-top: 8px;
+  font: 600 1.08rem/1.25 "Space Grotesk", sans-serif;
+}
+
+.team-profile-card__position {
+  margin-top: 18px;
+  color: var(--deep);
+  font: 600 0.72rem/1.4 "IBM Plex Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.team-profile-card__description {
+  margin-top: 10px;
+  color: var(--soft);
+  font-size: 0.88rem;
+}
+
+.profile-photo-placeholder,
+.team-profile-photo {
+  position: relative;
+  display: grid;
+  width: 132px;
+  height: 132px;
+  margin: 0 auto;
+  overflow: hidden;
+  place-items: end center;
+  border: 1px solid rgba(44, 109, 158, 0.24);
+  border-radius: 50%;
+  background: var(--tint);
+  color: var(--deep);
+}
+
+.team-profile-photo {
+  display: block;
+  object-fit: cover;
+}
+
+.team-photo-expand {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.team-photo-expand .team-profile-photo {
+  margin: 0;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.team-photo-expand:focus-visible {
+  outline: 3px solid var(--bright);
+  outline-offset: 4px;
+}
+
+.team-photo-lightbox {
+  width: min(90vw, 720px);
+  max-width: none;
+  max-height: 90dvh;
+  margin: auto;
+  padding: 0;
+  overflow: visible;
+  border: 1px solid rgba(242, 248, 252, 0.24);
+  border-radius: 10px;
+  background: var(--navy);
+  box-shadow: 0 24px 70px rgba(10, 31, 47, 0.34);
+  color: var(--paper);
+}
+
+.team-photo-lightbox::backdrop {
+  background: rgba(10, 31, 47, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.team-photo-lightbox figure {
+  display: grid;
+  max-height: 90dvh;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.team-photo-lightbox img {
+  display: block;
+  width: 100%;
+  max-height: calc(90dvh - 54px);
+  object-fit: contain;
+  border-radius: 9px 9px 0 0;
+  background: var(--navy);
+}
+
+.team-photo-lightbox figcaption {
+  padding: 13px 64px 14px 18px;
+  color: var(--paper);
+  font-size: 0.88rem;
+}
+
+.team-photo-lightbox__close {
+  position: absolute;
+  right: 10px;
+  bottom: 7px;
+  z-index: 1;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(242, 248, 252, 0.32);
+  border-radius: 50%;
+  background: rgba(20, 50, 74, 0.92);
+  color: var(--paper);
+  font: 400 1.55rem/1 Inter, sans-serif;
+  cursor: pointer;
+}
+
+.team-photo-lightbox__close:focus-visible {
+  outline: 3px solid var(--bright);
+  outline-offset: 2px;
+}
+
+.profile-photo-placeholder::before {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 27%;
+  height: 27%;
+  border-radius: 50%;
+  background: rgba(44, 109, 158, 0.3);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.profile-photo-placeholder::after {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  width: 54%;
+  height: 30%;
+  border-radius: 28px 28px 10px 10px;
+  background: rgba(44, 109, 158, 0.3);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.profile-photo-placeholder span {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px;
+  font: 500 0.55rem "IBM Plex Mono", monospace;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+@media (hover: hover) {
+  .team-profile-card {
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      border-color 180ms ease;
+  }
+
+  .team-profile-card:hover {
+    border-color: rgba(44, 109, 158, 0.3);
+    box-shadow: 0 14px 30px rgba(20, 50, 74, 0.12);
+    transform: translateY(-3px);
+  }
+
+  .team-photo-expand:hover .team-profile-photo {
+    box-shadow: 0 7px 18px rgba(20, 50, 74, 0.2);
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 800px) {
+  .team-grid > li {
+    flex-basis: calc((100% - 18px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 620px;
+    background:
+      linear-gradient(rgba(7, 29, 46, 0.68), rgba(7, 29, 46, 0.8)),
+      url("../images/muraka-farm-team.jpg") center center / cover no-repeat,
+      var(--navy);
+  }
+
+  .about-partner-grid,
+  .about-partner-grid--single {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-partner-group {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-grid > li { flex-basis: min(100%, 360px); }
+  .team-profile-card { width: min(100%, 360px); }
+}
+
+@media (max-width: 390px) {
+  .team-profile-card { padding: 24px 20px; }
+  .profile-photo-placeholder,
+  .team-profile-photo { width: 110px; height: 110px; }
+  .team-photo-lightbox { width: calc(100vw - 24px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-profile-card,
+  .team-photo-expand .team-profile-photo { transition: none; }
+}

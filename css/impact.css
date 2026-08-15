@@ -1,0 +1,43 @@
+.impact-hero {
+  display: flex;
+  min-height: 640px;
+  align-items: center;
+  padding: 116px 0 96px;
+  border: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 29, 46, 0.9) 0%, rgba(7, 29, 46, 0.72) 43%, rgba(7, 29, 46, 0.18) 100%),
+    url("../images/impact-hero.jpg") center 66% / cover no-repeat,
+    var(--navy);
+  color: var(--paper);
+}
+
+.impact-hero::after {
+  display: none;
+}
+
+.impact-hero .tag {
+  color: var(--bright);
+}
+
+.impact-hero h1 {
+  max-width: 13ch;
+  color: var(--paper);
+  text-shadow: 0 2px 16px rgba(3, 18, 29, 0.55);
+}
+
+.impact-hero p {
+  max-width: 62ch;
+  color: rgba(242, 248, 252, 0.9);
+  text-shadow: 0 1px 10px rgba(3, 18, 29, 0.62);
+}
+
+@media (max-width: 600px) {
+  .impact-hero {
+    min-height: 600px;
+    padding: 90px 20px 70px;
+    background:
+      linear-gradient(rgba(7, 29, 46, 0.7), rgba(7, 29, 46, 0.76)),
+      url("../images/impact-hero.jpg") center 64% / cover no-repeat,
+      var(--navy);
+  }
+}

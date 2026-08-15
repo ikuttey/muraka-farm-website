@@ -1,0 +1,2245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<title>Muraka Farm — Coral Reef Restoration, Dharavandhoo, Maldives</title>
+<meta name="description" content="Muraka Farm is a community-led coral reef restoration organisation based in Dharavandhoo, Baa Atoll, Maldives, working in restoration, education, research and community conservation.">
+<link rel="canonical" href="https://murakafarm.org/">
+<link rel="icon" href="images/muraka-logo.png" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/muraka-logo.png">
+<link rel="apple-touch-icon" href="images/muraka-logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muraka Farm — Coral Reef Restoration, Dharavandhoo, Maldives">
+<meta property="og:description" content="Muraka Farm is a community-led coral reef restoration organisation based in Dharavandhoo, Baa Atoll, Maldives, working in restoration, education, research and community conservation.">
+<meta property="og:url" content="https://murakafarm.org/">
+<meta property="og:image" content="https://murakafarm.org/images/muraka-social-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Muraka Farm — community-led coral reef restoration in the Maldives">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Muraka Farm — Coral Reef Restoration">
+<meta name="twitter:description" content="Community-led coral restoration, research, education and conservation in Dharavandhoo, Baa Atoll, Maldives.">
+<meta name="twitter:image" content="https://murakafarm.org/images/muraka-social-share.jpg">
+<meta name="twitter:image:alt" content="Muraka Farm — community-led coral reef restoration in the Maldives">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Muraka Farm",
+  "url": "https://murakafarm.org/",
+  "email": "murakafarm.mv@gmail.com",
+  "description": "Community-led coral reef restoration, research, education and conservation organisation based in Dharavandhoo, Baa Atoll, Maldives.",
+  "location": {
+    "@type": "Place",
+    "name": "Dharavandhoo, Baa Atoll, Maldives"
+  },
+  "sameAs": [
+    "https://www.instagram.com/murakafarm.drv/",
+    "https://www.facebook.com/murakafarm.mv/"
+  ]
+}
+</script>
+<style>
+  /* ============================================================
+     COLOR PALETTE — change a color here and it updates EVERYWHERE
+     it's used on the page. This is the first place to look for
+     any color edit. Pulled from the Muraka Farm logo.
+  ============================================================ */
+  :root{
+    --paper: #F2F8FC;
+    --paper-tint: #EAF2F8;
+    --navy: #14324A;
+    --navy-soft: #3A5972;
+    --blue-deep: #2C6D9E;
+    --blue: #4CA0D0;
+    --blue-bright: #74C2E8;
+    --slate: #808888;
+    --line: rgba(20,50,74,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth; scroll-padding-top:104px;}
+  body{
+    background:var(--paper);
+    color:var(--navy);
+    font-family:'Inter', sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+  h1,h2,h3{font-family:'Space Grotesk', sans-serif; font-weight:600; line-height:1.05; letter-spacing:-0.01em;}
+  a{color:inherit;}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--blue-bright); outline-offset:3px;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  ::selection{background:var(--blue); color:var(--paper);}
+
+  /* ---------- NAV BAR — matches "NAVIGATION BAR" in the HTML below ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,253,254,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .navbar{display:flex; align-items:center; justify-content:space-between; gap:28px; width:100%; max-width:1440px; margin:0 auto; padding:18px 36px;}
+  .brand{display:flex; align-items:center; gap:14px; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:1.35rem; letter-spacing:-0.01em;}
+  .brand img{width:auto; height:54px; flex:0 0 auto;}
+  .brand small{display:block; font-family:'IBM Plex Mono', monospace; font-size:0.6rem; letter-spacing:0.22em; color:var(--slate); font-weight:500; margin-top:1px;}
+  nav ul{display:flex; align-items:center; gap:clamp(14px,1.55vw,25px); list-style:none;}
+  nav a{display:block; white-space:nowrap; font-size:0.98rem; text-decoration:none; color:var(--navy-soft); font-weight:500; transition:color 0.2s,transform 0.2s;}
+  nav a:hover, nav a:focus-visible{color:var(--blue-deep);}
+  nav a:hover{transform:translateY(-1px);}
+  .nav-toggle{
+    display:none; width:48px; height:48px; border:1px solid var(--line); border-radius:3px;
+    background:var(--paper); color:var(--navy); cursor:pointer; align-items:center; justify-content:center;
+  }
+  .nav-toggle svg{width:25px; height:25px; stroke:currentColor; stroke-width:2; fill:none;}
+  .nav-cta{
+    background:var(--navy); color:var(--paper); padding:12px 24px; border-radius:3px;
+    text-decoration:none; font-size:0.96rem; font-weight:600; letter-spacing:0.02em;
+    transition:background 0.2s;
+  }
+  .nav-cta:hover, .nav-cta:focus-visible{background:var(--blue-deep);}
+
+  /* ---------- 1. HERO — matches "HERO SECTION" in the HTML below ---------- */
+  .hero{
+    position:relative;
+    padding:90px 32px 70px;
+    background:var(--navy);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+      linear-gradient(90deg,rgba(7,28,43,0.9) 0%,rgba(10,37,55,0.78) 52%,rgba(10,37,55,0.4) 100%),
+      url('images/dhirun-community-training.png') center 64% / cover no-repeat;
+  }
+  .hero-mark{
+    position:absolute; top:-30px; right:-40px; width:420px; height:auto; opacity:1;
+  }
+  .hero-inner{position:relative; z-index:1; max-width:760px; text-shadow:0 1px 2px rgba(0,0,0,0.28);}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--blue-bright); margin-bottom:22px;
+  }
+  .eyebrow::before{content:''; width:26px; height:1px; background:var(--blue-bright);}
+  h1.display{
+    font-size:clamp(2.6rem, 6vw, 4.5rem);
+    color:var(--paper);
+    max-width:14ch;
+  }
+  h1.display em{
+    font-style:normal; color:var(--blue-bright);
+  }
+  .hero-sub{
+    margin-top:26px; max-width:52ch; font-size:1.12rem; color:rgba(242,248,252,0.9);
+  }
+  .hero-actions{display:flex; gap:16px; margin-top:38px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; padding:14px 28px; border-radius:3px; text-decoration:none;
+    font-weight:600; font-size:0.95rem; letter-spacing:0.01em; transition:transform 0.15s, background 0.2s;
+  }
+  .btn-primary{background:var(--paper); color:var(--navy);}
+  .btn-primary:hover, .btn-primary:focus-visible{background:var(--blue-bright); transform:translateY(-1px);}
+  .btn-ghost{background:transparent; color:var(--paper); border:1.5px solid rgba(242,248,252,0.9);}
+  .btn-ghost:hover, .btn-ghost:focus-visible{background:var(--paper); color:var(--navy);}
+
+  /* ---------- VOLUNTEER MODAL ---------- */
+  .volunteer-modal[hidden]{display:none;}
+  .volunteer-modal{position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(10,31,47,0.72);}
+  .volunteer-dialog{position:relative; width:min(100%, 620px); max-height:calc(100vh - 48px); overflow-y:auto; background:var(--paper); border:1px solid var(--line); border-radius:6px; box-shadow:0 24px 70px rgba(10,31,47,0.3); padding:38px;}
+  .volunteer-dialog h2{padding-right:42px; font-size:clamp(1.7rem,3vw,2.25rem); color:var(--navy);}
+  .volunteer-intro{margin-top:18px; color:var(--navy-soft);}
+  .volunteer-close{position:absolute; top:18px; right:18px; width:38px; height:38px; display:grid; place-items:center; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--navy); cursor:pointer;}
+  .volunteer-close:hover,.volunteer-close:focus-visible{background:var(--paper-tint); color:var(--blue-deep);}
+  .volunteer-close svg,.volunteer-contact svg{width:20px; height:20px; flex:0 0 auto;}
+  .volunteer-contacts{display:flex; flex-direction:column; margin-top:26px; border-top:1px solid var(--line);}
+  .volunteer-contact{display:grid; grid-template-columns:24px 1fr; gap:14px; align-items:center; padding:16px 4px; border-bottom:1px solid var(--line); color:var(--navy); text-decoration:none;}
+  .volunteer-contact:hover,.volunteer-contact:focus-visible{color:var(--blue-deep);}
+  .volunteer-contact strong{display:block; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .volunteer-contact span{display:block; margin-top:2px; font-size:0.94rem; overflow-wrap:anywhere;}
+  .volunteer-note{margin-top:22px; padding-left:16px; border-left:2px solid var(--blue); color:var(--navy-soft); font-size:0.84rem;}
+
+  /* ---------- ADOPTION MODAL ---------- */
+  .adoption-modal[hidden]{display:none;}
+  .adoption-modal{position:fixed; inset:0; z-index:101; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(10,31,47,0.76);}
+  .adoption-dialog{position:relative; width:min(100%, 760px); max-height:calc(100vh - 48px); overflow-y:auto; background:var(--paper); border:1px solid var(--line); border-radius:6px; box-shadow:0 24px 70px rgba(10,31,47,0.32); padding:40px;}
+  .adoption-dialog section{padding:0;}
+  .adoption-dialog h2{padding-right:44px; font-size:clamp(1.8rem,3vw,2.4rem); color:var(--navy);}
+  .adoption-intro{margin-top:18px; color:var(--navy-soft);}
+  .adoption-intro p + p{margin-top:12px;}
+  .adoption-price{margin:26px 0; padding:18px 20px; border-left:3px solid var(--blue); background:var(--paper-tint); font-family:'Space Grotesk',sans-serif; font-size:1.35rem; font-weight:700; color:var(--navy);}
+  .adoption-dialog h3{margin:26px 0 12px; font-size:1.1rem; color:var(--navy);}
+  .adoption-support{list-style:none; display:grid; gap:9px; color:var(--navy-soft);}
+  .adoption-support li{display:flex; gap:10px;}
+  .adoption-support li::before{content:'✓'; color:var(--blue-deep); font-weight:700;}
+  .adoption-sharing p{color:var(--navy-soft);}
+  .adoption-sharing p + p{margin-top:10px;}
+  .adoption-close{position:absolute; top:18px; right:18px; width:38px; height:38px; display:grid; place-items:center; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--navy); cursor:pointer;}
+  .adoption-close:hover,.adoption-close:focus-visible{background:var(--paper-tint); color:var(--blue-deep);}
+  .adoption-close svg{width:20px; height:20px;}
+  .adoption-summary{margin-top:18px; color:var(--navy-soft);}
+  .adoption-summary p + p{margin-top:10px;}
+  .adoption-steps{display:grid; gap:14px; margin-top:28px;}
+  .adoption-step{padding:22px; border:1px solid var(--line); border-radius:5px; background:var(--paper-tint);}
+  .adoption-step-label{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em; color:var(--blue-deep); text-transform:uppercase;}
+  .adoption-step h3{margin:7px 0 0;}
+  .adoption-step p{margin-top:8px; color:var(--navy-soft); font-size:0.9rem;}
+  .adoption-step-action{display:inline-flex; margin-top:16px; padding:12px 16px; border:1px solid var(--blue-deep); border-radius:3px; background:var(--blue-deep); color:var(--paper); font-size:0.84rem; font-weight:700; text-decoration:none; text-transform:uppercase;}
+  .adoption-step-action:hover,.adoption-step-action:focus-visible{border-color:var(--navy); background:var(--navy);}
+  .adoption-payment-note{font-weight:600; color:var(--navy);}
+
+  /* ---------- DONATION MODAL ---------- */
+  .donation-modal[hidden]{display:none;}
+  .donation-modal{position:fixed; inset:0; z-index:102; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(10,31,47,0.76);}
+  .donation-dialog{position:relative; width:min(100%, 560px); max-height:calc(100vh - 48px); overflow-y:auto; background:var(--paper); border:1px solid var(--line); border-radius:6px; box-shadow:0 24px 70px rgba(10,31,47,0.32); padding:40px;}
+  .donation-dialog h2{padding-right:44px; font-size:clamp(1.8rem,3vw,2.3rem); color:var(--navy);}
+  .donation-intro{margin-top:16px; color:var(--navy-soft);}
+  .donation-dialog h3{margin-top:28px; font-size:1rem; color:var(--navy);}
+  .donation-amounts{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px;}
+  .donation-amount{position:relative; min-height:48px; border:1px solid rgba(20,50,74,0.25); border-radius:3px; background:#fff; color:var(--navy); font:600 0.95rem 'Inter',sans-serif; cursor:pointer;}
+  .donation-amount:hover,.donation-amount:focus-visible{border-color:var(--blue-deep);}
+  .donation-amount.is-selected{padding-right:24px; border-color:var(--blue-deep); background:var(--blue-deep); color:var(--paper);}
+  .donation-amount.is-selected::after{content:'✓'; position:absolute; right:10px; top:50%; transform:translateY(-50%); font-weight:700;}
+  .donation-other{display:block; margin-top:20px; font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.04em; color:var(--navy-soft); text-transform:uppercase;}
+  .donation-other-control{display:flex; align-items:center; margin-top:8px; border:1px solid rgba(20,50,74,0.25); border-radius:3px; background:#fff;}
+  .donation-other-control:focus-within{outline:2px solid rgba(76,160,208,0.3); border-color:var(--blue-deep);}
+  .donation-currency{padding-left:13px; color:var(--navy); font-weight:600;}
+  .donation-other-control input{width:100%; min-width:0; border:0; outline:0; background:transparent; padding:12px 13px 12px 7px; color:var(--navy); font:inherit;}
+  .donation-pay{width:100%; margin-top:24px; border:0; border-radius:3px; padding:14px 18px; background:var(--navy); color:var(--paper); font:700 0.9rem 'Inter',sans-serif; cursor:pointer;}
+  .donation-pay:hover,.donation-pay:focus-visible{background:var(--blue-deep);}
+  .donation-pay:disabled{background:var(--slate); opacity:0.55; cursor:not-allowed;}
+  .donation-close{position:absolute; top:18px; right:18px; width:38px; height:38px; display:grid; place-items:center; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--navy); cursor:pointer;}
+  .donation-close:hover,.donation-close:focus-visible{background:var(--paper-tint); color:var(--blue-deep);}
+  .donation-close svg{width:20px; height:20px;}
+
+  /* ---------- PARTNERSHIP MODAL ---------- */
+  .partnership-modal[hidden]{display:none;}
+  .partnership-modal{position:fixed; inset:0; z-index:103; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(10,31,47,0.78);}
+  .partnership-dialog{position:relative; width:min(100%, 900px); max-height:calc(100vh - 48px); overflow-y:auto; background:var(--paper); border:1px solid var(--line); border-radius:6px; box-shadow:0 24px 70px rgba(10,31,47,0.34); padding:44px;}
+  .partnership-dialog h2{padding-right:44px; font-size:clamp(1.9rem,3vw,2.6rem); color:var(--navy);}
+  .partnership-lead{margin-top:10px; font-family:'Space Grotesk',sans-serif; font-size:1.15rem; font-weight:600; color:var(--blue-deep);}
+  .partnership-intro{margin-top:18px; max-width:72ch; color:var(--navy-soft);}
+  .partnership-intro p + p{margin-top:10px;}
+  .partnership-options{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:28px;}
+  .partnership-option{position:relative; padding:22px; border:1px solid var(--line); border-radius:5px; background:var(--paper-tint); text-align:left; font:inherit; cursor:pointer;}
+  .partnership-option:hover,.partnership-option:focus-visible{border-color:var(--blue-deep); outline:none;}
+  .partnership-option.is-selected{border-color:var(--blue-deep); background:var(--blue-deep);}
+  .partnership-option.is-selected::after{content:'✓'; position:absolute; top:18px; right:18px; color:var(--paper); font-weight:700;}
+  .partnership-option h3{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; letter-spacing:0.05em; color:var(--blue-deep);}
+  .partnership-option p{margin-top:8px; color:var(--navy-soft); font-size:0.9rem;}
+  .partnership-option.is-selected h3,.partnership-option.is-selected p{color:var(--paper);}
+  .partnership-open{margin-top:28px; padding:22px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .partnership-open h3{font-size:1.15rem; color:var(--navy);}
+  .partnership-open p{margin-top:8px; color:var(--navy-soft);}
+  .partnership-contacts{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .partnership-contact{display:inline-flex; align-items:center; min-height:44px; padding:11px 15px; border:1px solid var(--navy); border-radius:3px; color:var(--navy); font-size:0.78rem; font-weight:700; text-decoration:none; text-transform:uppercase;}
+  .partnership-contact:hover,.partnership-contact:focus-visible{background:var(--navy); color:var(--paper);}
+  .partnership-contact-primary{border-color:var(--blue-deep); background:var(--blue-deep); color:var(--paper);}
+  .partnership-contact-primary:hover,.partnership-contact-primary:focus-visible{border-color:var(--navy); background:var(--navy);}
+  .partnership-project{display:flex; align-items:center; justify-content:space-between; gap:22px; margin-top:28px; padding:22px; background:var(--navy); color:var(--paper); border-radius:5px;}
+  .partnership-project strong{display:block; font-family:'Space Grotesk',sans-serif; font-size:1rem;}
+  .partnership-project span{display:block; margin-top:5px; color:rgba(251,253,254,0.72); font-size:0.86rem;}
+  .partnership-project a{flex:0 0 auto; color:var(--blue-bright); font-weight:700; text-decoration:none;}
+  .partnership-project a:hover,.partnership-project a:focus-visible{color:var(--paper);}
+  .partnership-detail[hidden]{display:none;}
+  .partnership-back{display:inline-flex; align-items:center; margin-bottom:24px; padding:0; border:0; background:transparent; color:var(--blue-deep); font:600 0.86rem 'Inter',sans-serif; cursor:pointer;}
+  .partnership-back:hover,.partnership-back:focus-visible{color:var(--navy);}
+  .partnership-detail-copy{margin-top:18px; max-width:68ch; color:var(--navy-soft);}
+  .partnership-suitable{margin-top:24px; padding:18px 20px; border-left:3px solid var(--blue); background:var(--paper-tint); color:var(--navy-soft);}
+  .partnership-suitable strong{display:block; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.05em; text-transform:uppercase; color:var(--blue-deep);}
+  .partnership-detail-question{margin-top:28px; font-size:1.1rem; color:var(--navy);}
+  .partnership-detail-cta{display:inline-flex; margin-top:14px; padding:13px 18px; border:1px solid var(--blue-deep); border-radius:3px; background:var(--blue-deep); color:var(--paper); font-size:0.88rem; font-weight:700; text-decoration:none;}
+  .partnership-detail-cta:hover,.partnership-detail-cta:focus-visible{border-color:var(--navy); background:var(--navy);}
+  .partnership-close{position:absolute; top:18px; right:18px; width:38px; height:38px; display:grid; place-items:center; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--navy); cursor:pointer;}
+  .partnership-close:hover,.partnership-close:focus-visible{background:var(--paper-tint); color:var(--blue-deep);}
+  .partnership-close svg{width:20px; height:20px;}
+
+  /* ---------- RESEARCH MODAL ---------- */
+  .research-modal[hidden]{display:none;}
+  .research-modal{position:fixed; inset:0; z-index:104; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(10,31,47,0.8);}
+  .research-dialog{position:relative; width:min(100%, 940px); max-height:calc(100vh - 48px); overflow-y:auto; background:var(--paper); border:1px solid var(--line); border-radius:6px; box-shadow:0 24px 70px rgba(10,31,47,0.35); padding:44px;}
+  #research-modal section{padding:0;}
+  .research-dialog h2{padding-right:44px; font-size:clamp(1.9rem,3vw,2.6rem); color:var(--navy);}
+  .research-lead{margin-top:10px; font-family:'Space Grotesk',sans-serif; font-size:1.15rem; font-weight:600; color:var(--blue-deep);}
+  .research-intro{margin-top:18px; max-width:76ch; color:var(--navy-soft);}
+  .research-intro p + p{margin-top:10px;}
+  .research-section{margin-top:34px;}
+  .research-section h3{font-size:1.2rem; color:var(--navy);}
+  .research-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px;}
+  .research-area{padding:20px; border:1px solid var(--line); border-radius:5px; background:var(--paper-tint);}
+  .research-area h4{font-family:'Space Grotesk',sans-serif; font-size:1rem; color:var(--navy);}
+  .research-area p{margin-top:7px; color:var(--navy-soft); font-size:0.88rem;}
+  .research-support-intro,.research-section-copy{margin-top:12px; color:var(--navy-soft);}
+  .research-support-list{display:grid; gap:9px; margin-top:14px; list-style:none; color:var(--navy-soft);}
+  .research-support-list li{display:flex; gap:10px;}
+  .research-support-list li::before{content:'—'; color:var(--blue-deep); font-weight:700;}
+  .research-tags{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 16px;}
+  .research-tag{padding:7px 10px; border:1px solid rgba(44,109,158,0.28); border-radius:3px; background:var(--paper-tint); color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.7rem;}
+  .research-location{margin-top:34px; padding:24px; border-left:3px solid var(--blue); background:var(--paper-tint);}
+  .research-location h3{font-size:1.2rem; color:var(--navy);}
+  .research-location strong{display:block; margin-top:12px; color:var(--blue-deep);}
+  .research-location p{margin-top:8px; color:var(--navy-soft);}
+  .research-location a{display:inline-block; margin-top:14px; color:var(--blue-deep); font-weight:700; text-decoration:none;}
+  .research-proposal{margin-top:36px; padding-top:28px; border-top:1px solid var(--line); color:var(--navy-soft);}
+  .research-proposal strong{display:block; color:var(--navy);}
+  .research-proposal a{display:inline-block; margin-top:10px; color:var(--blue-deep); font-weight:700; text-decoration:none;}
+  .research-close{position:absolute; top:18px; right:18px; width:38px; height:38px; display:grid; place-items:center; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--navy); cursor:pointer;}
+  .research-close:hover,.research-close:focus-visible{background:var(--paper-tint); color:var(--blue-deep);}
+  .research-close svg{width:20px; height:20px;}
+  .education-practical{margin-top:12px; color:var(--navy-soft);}
+  .education-choices{margin-top:36px; padding-top:30px; border-top:1px solid var(--line);}
+  .education-choices>p{margin-top:8px; color:var(--navy-soft);}
+  #education-modal .research-dialog{padding:24px;}
+  #education-modal section{padding:0;}
+  #education-modal .research-lead{margin-top:4px;}
+  #education-modal .research-intro{margin-top:6px;}
+  #education-modal .research-intro p + p{margin-top:4px;}
+  #education-modal .research-section{margin-top:16px;}
+  #education-modal .research-grid{grid-template-columns:repeat(4,1fr); gap:7px; margin-top:9px; align-items:start;}
+  #education-modal .research-area{padding:9px;}
+  #education-modal .research-area h4{font-size:0.88rem;}
+  #education-modal .research-area p{margin-top:3px; font-size:0.78rem; line-height:1.35;}
+  #education-modal .education-practical{margin-top:4px; font-size:0.86rem;}
+  #education-modal .research-tags{gap:4px; margin:5px 0 6px;}
+  #education-modal .research-tag{padding:5px 7px;}
+  #education-modal .education-choices{margin-top:16px; padding-top:14px;}
+  #education-modal .education-choices>p{margin-top:4px;}
+  #education-modal .education-choices .partnership-options{grid-template-columns:repeat(4,1fr); margin-top:9px; gap:7px;}
+  #education-modal .education-choices .partnership-option{padding:9px;}
+  #education-modal .education-choices .partnership-option p{font-size:0.78rem; line-height:1.35;}
+
+  .hero-stats{
+    display:flex; gap:48px; margin-top:64px; flex-wrap:wrap;
+    padding-top:30px; border-top:1px solid rgba(242,248,252,0.32);
+  }
+  .stat-num{font-family:'Space Grotesk',sans-serif; font-size:2.1rem; font-weight:700; color:var(--paper);}
+  .stat-label{font-size:0.82rem; color:rgba(242,248,252,0.78); max-width:20ch; margin-top:4px;}
+
+  /* ---------- section shell ---------- */
+  section{padding:100px 0;}
+  .section-head{max-width:640px; margin-bottom:56px;}
+  .section-tag{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--blue-deep); margin-bottom:14px; display:block;
+  }
+  .section-head h2{font-size:clamp(1.9rem, 3.4vw, 2.7rem); color:var(--navy);}
+  .section-head p{margin-top:16px; color:var(--navy-soft); font-size:1.05rem;}
+
+  /* ---------- ABOUT MURAKA FARM ---------- */
+  .about{background:var(--paper-tint); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .about .section-head{max-width:none;}
+  .about .section-head h2{font-size:clamp(1.75rem,3vw,2.45rem); white-space:nowrap;}
+  .about-intro{max-width:820px; font-size:1.15rem; color:var(--navy-soft); margin-bottom:40px;}
+  .about-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;}
+  .about-card{border:1px solid var(--line); border-radius:6px; padding:30px; background:#E1EEF5;}
+  .about-card .num{display:block; font-family:'IBM Plex Mono',monospace; color:var(--blue-deep); font-size:0.76rem; margin-bottom:18px;}
+  .about-card h3{font-size:1.3rem; margin-bottom:10px;}
+  .about-card p{color:var(--navy-soft); font-size:0.95rem;}
+
+  /* ---------- DHIRUN FLAGSHIP PROGRAMME ---------- */
+.dhirun{background:var(--paper-tint);}
+.bml-project{background:var(--paper);}
+.bml-project-card{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(260px,0.65fr); gap:38px; align-items:center; padding:36px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+.bml-project-card h2{font-size:clamp(2rem,4vw,3rem);}
+.bml-project-card p{max-width:68ch; margin-top:16px; color:var(--navy-soft);}
+.bml-project-summary{display:grid; gap:12px;}
+.bml-project-fact{padding:16px; border:1px solid var(--line); border-radius:4px; background:var(--paper);}
+.bml-project-fact span{display:block; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase;}
+.bml-project-fact strong{display:block; margin-top:5px; font-family:'Space Grotesk',sans-serif; font-size:1rem;}
+.bml-project-summary .btn{margin-top:4px; text-align:center;}
+.bml-project-gallery{grid-column:1 / -1; display:grid; grid-template-columns:minmax(0,0.78fr) minmax(0,1.22fr); grid-template-rows:repeat(2,minmax(0,1fr)); gap:12px; height:680px; margin-top:4px;}
+.bml-project-photo{position:relative; min-width:0; min-height:0; overflow:hidden; border-radius:5px; background:var(--navy);}
+.bml-project-photo:first-child{grid-row:1 / 3;}
+.bml-project-photo img{width:100%; height:100%; object-fit:cover; object-position:center; transition:transform 500ms cubic-bezier(.22,1,.36,1);}
+.bml-project-photo:first-child img{object-position:center 52%;}
+.bml-project-photo:nth-child(2) img{object-position:center bottom;}
+.bml-project-photo:nth-child(3) img{object-position:center 58%;}
+.bml-project-photo:hover img{transform:scale(1.025);}
+  .dhirun-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:stretch; padding:36px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  .dhirun-visual{min-height:680px; height:100%; display:grid; grid-template-columns:1fr; grid-template-rows:minmax(0,1fr); gap:12px;}
+  .dhirun-photo{position:relative; overflow:hidden; border-radius:6px; background:var(--navy);}
+  .dhirun-photo img{width:100%; height:100%; position:absolute; inset:0; object-fit:cover;}
+  .dhirun-name{font-size:clamp(2.4rem,5vw,4rem); margin-bottom:8px;}
+  .dhirun-dhivehi{font-family:serif; color:var(--blue-deep); font-size:1.5rem; margin-left:8px;}
+  .dhirun-copy>p{color:var(--navy-soft); margin:20px 0 28px;}
+  .dhirun-pillars{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .dhirun-pillar{background:var(--paper); border:1px solid var(--line); padding:20px; border-radius:5px;}
+  .dhirun-pillar span{font-family:'IBM Plex Mono',monospace; color:var(--blue-deep); font-size:0.72rem;}
+  .dhirun-pillar h3{font-size:1rem; margin:8px 0 5px;}
+  .dhirun-pillar p{font-size:0.84rem; color:var(--navy-soft);}
+  .dhirun-collaboration{margin:0 0 30px; padding:26px; border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:6px; background:var(--paper);}
+  .dhirun-collaboration-label{display:block; margin-bottom:9px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.07em; text-transform:uppercase;}
+  .dhirun-collaboration h3{font-size:clamp(1.35rem,2.2vw,1.75rem);}
+  .dhirun-collaboration-intro{margin-top:14px; color:var(--navy-soft); font-size:0.88rem; line-height:1.55;}
+  .dhirun-collaboration-intro p+p{margin-top:10px;}
+  .dhirun-collaborators{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:10px; align-items:stretch; margin-top:22px;}
+  .dhirun-collaborator-card{min-width:0; padding:18px; border:1px solid var(--line); border-radius:5px; background:#E1EEF5;}
+  .dhirun-collaborator-role{display:block; margin-bottom:8px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .dhirun-collaborator-card h4{overflow-wrap:anywhere; font-family:'Space Grotesk',sans-serif; font-size:0.95rem; line-height:1.2; color:var(--navy);}
+  .dhirun-collaborator-card p{margin-top:10px; color:var(--navy-soft); font-size:0.78rem; line-height:1.5;}
+  .dhirun-collaboration-mark{align-self:center; color:var(--blue-deep); font-family:'Space Grotesk',sans-serif; font-size:1.2rem; font-weight:600;}
+  .dhirun-collaborator-tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:14px;}
+  .dhirun-collaborator-tags span{padding:5px 7px; border:1px solid rgba(44,109,158,0.22); border-radius:3px; background:var(--paper); color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.58rem; line-height:1.3;}
+  .dhirun-community-note{margin-top:18px; padding:14px 16px; border-left:3px solid var(--blue); background:var(--paper-tint);}
+  .dhirun-community-note strong{display:block; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.64rem; letter-spacing:0.06em;}
+  .dhirun-community-note p{margin-top:6px; color:var(--navy-soft); font-size:0.78rem; line-height:1.5;}
+
+  /* ---------- PARTNERS ---------- */
+  .partners{background:var(--paper);}
+  .partner-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+  .partner-card{min-height:145px; border:1px solid var(--line); border-radius:6px; padding:24px; display:flex; flex-direction:column; justify-content:center; background:#E1EEF5;}
+  .partner-card span{font-family:'IBM Plex Mono',monospace; color:var(--blue-deep); font-size:0.72rem; margin-bottom:9px;}
+  .partner-card .partner-icon{font-family:inherit; font-size:1.8rem; line-height:1; margin-bottom:16px;}
+  .partner-card h3{font-size:1.05rem;}
+  .partners-note{margin-top:28px; color:var(--navy-soft); max-width:70ch;}
+  .partner-collaborations{margin-top:46px; padding-top:38px; border-top:1px solid var(--line);}
+  .partner-collaborations>h3{font-size:clamp(1.45rem,2.5vw,2rem);}
+  .partner-collaborations>p{max-width:72ch; margin-top:10px; color:var(--navy-soft);}
+  .partner-detail-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:24px;}
+  .partner-detail{padding:24px; border:1px solid var(--line); border-radius:6px; background:var(--paper-tint);}
+  .partner-detail-logo{display:flex; align-items:center; justify-content:center; width:100%; height:104px; margin-bottom:18px; padding:12px 18px; overflow:hidden; border:1px solid var(--line); border-radius:5px; background:#fff;}
+  .partner-detail-logo.is-dark{background:var(--navy);}
+  .partner-detail-logo img{display:block; width:100%; height:100%; object-fit:contain;}
+  .partner-detail-role{display:block; margin-bottom:10px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .partner-detail h4{font-family:'Space Grotesk',sans-serif; font-size:1.08rem; color:var(--navy);}
+  .partner-detail p{margin-top:9px; color:var(--navy-soft); font-size:0.88rem; line-height:1.55;}
+  .partner-detail a{display:inline-block; margin-top:14px; color:var(--blue-deep); font-size:0.82rem; font-weight:600; text-decoration:none;}
+  .partner-detail a:hover,.partner-detail a:focus-visible{text-decoration:underline;}
+  .partner-logos{display:flex; flex-wrap:wrap; align-items:center; gap:24px; margin-top:28px;}
+  .partner-logos:empty{display:none;}
+
+  /* ---------- 3. WHY IT MATTERS — matches "WHY IT MATTERS" in the HTML below ---------- */
+  .why{
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(90deg,rgba(9,38,58,0.84) 0%,rgba(9,38,58,0.68) 52%,rgba(9,38,58,0.56) 100%),
+      url('images/back.png') center center / cover no-repeat;
+    color:var(--paper);
+  }
+  .why .section-tag{color:var(--blue-bright);}
+  .why .section-head{margin-bottom:36px;}
+  .why .section-head h2{color:var(--paper);}
+  .why .section-head p{color:rgba(251,253,254,0.75);}
+  .why-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:start; position:relative; z-index:1;}
+  .why-copy p{color:rgba(251,253,254,0.82); margin-bottom:18px; max-width:56ch;}
+  .quote-block{
+    border-left:2px solid var(--blue-bright); padding-left:24px; margin-top:32px;
+  }
+  .quote-block p{font-family:'Space Grotesk', sans-serif; font-weight:500; font-size:1.25rem; color:var(--paper); line-height:1.5;}
+  .quote-block cite{display:block; margin-top:14px; font-style:normal; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--blue-bright);}
+  .why .section-head .why-subhead{margin-top:16px; color:var(--blue-bright); font-family:'Space Grotesk',sans-serif; font-size:1.08rem; font-weight:600;}
+  .heat-panel{
+    background:rgba(251,253,254,0.05); border:1px solid rgba(251,253,254,0.15); border-radius:4px; padding:32px;
+  }
+  .heat-panel .section-tag{margin-bottom:8px;}
+  .reef-impact-list{display:flex; flex-direction:column;}
+  .reef-impact{padding:20px 0; border-bottom:1px solid rgba(251,253,254,0.14);}
+  .reef-impact strong{display:block; margin-bottom:5px; font-family:'IBM Plex Mono',monospace; font-size:0.76rem; letter-spacing:0.08em; color:var(--blue-bright);}
+  .reef-impact span{display:block; color:rgba(251,253,254,0.78); font-size:0.92rem; line-height:1.5;}
+  .evidence-callout{display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:start; margin-top:24px; padding-top:22px;}
+  .evidence-callout .big{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:2rem; color:var(--blue-bright); line-height:1;}
+  .evidence-callout .cap{font-size:0.8rem; color:rgba(251,253,254,0.62); line-height:1.45;}
+  .evidence-callout .foot{grid-column:1 / -1; font-family:'IBM Plex Mono', monospace; font-size:0.65rem; color:rgba(251,253,254,0.42);}
+  .evidence-callout a.foot{text-decoration:none; transition:color 0.2s;}
+  .evidence-callout a.foot:hover,.evidence-callout a.foot:focus-visible{color:var(--paper);}
+
+  /* ---------- 5. OUR PROCESS — matches "OUR PROCESS" in the HTML below ---------- */
+  .process-layout{display:grid; grid-template-columns:minmax(280px,0.78fr) minmax(0,1.22fr); gap:56px; align-items:start;}
+  .process-video{position:sticky; top:96px; min-width:0; overflow:hidden; border:1px solid var(--line); border-radius:6px; background:var(--navy); box-shadow:0 16px 36px rgba(20,50,74,0.12); aspect-ratio:9/16;}
+  .process-video iframe{display:block; width:100%; height:100%; border:0;}
+  .process-list{display:flex; flex-direction:column;}
+  .process-item{
+    display:grid; grid-template-columns:110px 1fr; gap:32px;
+    padding:36px 0; border-top:1px solid var(--line);
+  }
+  .process-item:last-child{border-bottom:1px solid var(--line);}
+  .process-step{font-family:'IBM Plex Mono', monospace; color:var(--blue-deep); font-size:0.85rem; padding-top:6px;}
+  .process-item h3{font-size:1.4rem; color:var(--navy); margin-bottom:10px;}
+  .process-item p{color:var(--navy-soft); max-width:60ch;}
+  /* ---------- 9. DHARAVANDHOO — matches "DHARAVANDHOO" in the HTML below ---------- */
+  .place{background:var(--paper-tint);}
+  .place-grid{display:grid; grid-template-columns:1fr; gap:36px; align-items:start;}
+  .place-visuals{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:min(100%,860px); margin-inline:auto; gap:16px; align-items:start;}
+  .place-visual{
+    aspect-ratio:9/16; border-radius:4px; position:relative; overflow:hidden;
+    background:linear-gradient(160deg, var(--blue-deep) 0%, var(--navy) 75%);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .place-visual img{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
+  .place-visual.secondary{aspect-ratio:9/16;}
+  .place-visual iframe{
+    display:block; width:100%; height:100%; border:0;
+  }
+  .place-visual .coral-mark{width:70%; height:70%; opacity:0.9;}
+  .place-visual .pin{
+    position:absolute; bottom:26px; left:26px; background:var(--paper); color:var(--navy);
+    padding:10px 16px; border-radius:3px; font-family:'IBM Plex Mono', monospace; font-size:0.78rem;
+  }
+  .place-copy h3{font-size:clamp(1.9rem,3vw,2.4rem); margin-bottom:20px;}
+  .place-copy p{color:var(--navy-soft); margin-bottom:16px; max-width:82ch;}
+  .place-copy .home-statement{font-family:'Space Grotesk',sans-serif; font-size:1.15rem; font-weight:600; color:var(--navy);}
+  .place-copy .place-closing{margin-top:26px; font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:600; color:var(--blue-deep);}
+  .place-action{margin-top:24px; background:var(--navy); color:var(--paper);}
+  .place-action:hover,.place-action:focus-visible{background:var(--blue-deep); transform:translateY(-1px);}
+  .place-facts{list-style:none; margin-top:24px; display:flex; flex-direction:column; gap:12px;}
+  .place-facts li{display:flex; gap:12px; font-size:0.95rem; color:var(--navy);}
+  .place-facts li::before{content:'—'; color:var(--blue-deep); font-weight:600;}
+
+  /* ---------- EVENTS / COMMUNITY ACTION ---------- */
+  .community-events{
+    padding:100px 0; color:var(--navy);
+    background:var(--paper-tint);
+  }
+  .community-events .section-tag{color:var(--blue-deep);}
+  .community-events .section-head{margin-bottom:56px;}
+  .community-events .section-head h2{color:var(--navy);}
+  .community-events .section-head p{margin-top:14px;}
+  .community-events .section-head p{color:var(--navy-soft);}
+  .event-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; align-items:stretch;}
+  .event-card{display:flex; flex-direction:column; align-items:stretch; min-width:0; overflow:hidden; border:1px solid rgba(20,50,74,0.12); border-top:3px solid var(--blue); border-radius:6px; background:#E1EEF5; color:inherit; text-decoration:none; box-shadow:0 10px 24px rgba(20,50,74,0.06); transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease;}
+  .event-card:hover,.event-card:focus-visible{transform:translateY(-3px); border-color:var(--blue); box-shadow:0 12px 28px rgba(20,50,74,0.12);}
+  .event-card-image{display:block; width:100%; height:190px; object-fit:cover;}
+  .event-copy{min-width:0; padding:20px;}
+  .event-meta{display:block; margin-bottom:10px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .event-card h3{font-size:1.08rem; line-height:1.2;}
+  .event-card p{margin-top:9px; color:var(--navy-soft); font-size:0.84rem; line-height:1.5;}
+
+  @media (max-width:1000px){
+    .event-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- WORK WITH MURAKA GATEWAY ---------- */
+  .work-gateway{background:var(--paper-tint);}
+  .work-gateway-inner{display:flex; align-items:center; justify-content:space-between; gap:40px; padding:42px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  .work-gateway-copy{max-width:760px;}
+  .work-gateway h2{font-size:clamp(2rem,4vw,3rem);}
+  .work-gateway p{margin-top:14px; color:var(--navy-soft);}
+  .work-gateway .btn{flex:0 0 auto; border:1px solid var(--navy); background:var(--navy); color:var(--paper); text-align:center;}
+  .work-gateway .btn:hover,.work-gateway .btn:focus-visible{background:var(--blue-deep);}
+
+  /* ---------- PROJECTS OVERVIEW ---------- */
+  .home-projects{background:var(--paper);}
+  .home-projects-panel{padding:36px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  .home-projects-panel .section-head{margin-bottom:30px;}
+  .home-project-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px;}
+  .home-project-card{display:flex; min-width:0; overflow:hidden; flex-direction:column; border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:6px; background:var(--paper); color:inherit; text-decoration:none; box-shadow:0 10px 24px rgba(20,50,74,0.06); transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease;}
+  .home-project-card:hover,.home-project-card:focus-visible{transform:translateY(-3px); border-color:var(--blue); box-shadow:0 12px 28px rgba(20,50,74,0.12);}
+  .home-project-card-image{display:block; width:100%; height:240px; object-fit:cover;}
+  .home-project-card:first-child .home-project-card-image{object-position:center 54%;}
+  .home-project-card:nth-child(2) .home-project-card-image{object-position:center 48%;}
+  .home-project-card-copy{display:block; min-width:0; padding:22px;}
+  .home-project-meta{display:block; margin-bottom:9px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.04em; text-transform:uppercase;}
+  .home-project-card strong{display:block; margin-bottom:7px; color:var(--navy); font-family:'Space Grotesk',sans-serif; font-size:1.25rem;}
+  .home-project-description{display:block; color:var(--navy-soft); font-size:0.9rem; line-height:1.5;}
+
+  /* ---------- FIELD LEARNING ---------- */
+  .field-learning{padding-bottom:64px; background:var(--paper);}
+  .field-learning-card{padding:36px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  .field-learning .section-head{margin-bottom:30px;}
+  .field-learning-examples{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px;}
+  .field-learning-example{display:flex; flex-direction:column; align-items:stretch; overflow:hidden; border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  a.field-learning-example{color:inherit; text-decoration:none; cursor:pointer; transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease;}
+  a.field-learning-example:hover{transform:translateY(-3px); border-color:var(--blue); box-shadow:0 10px 24px rgba(10,31,47,0.1);}
+  .field-learning-example-image{display:block; width:100%; height:180px; object-fit:cover;}
+  .field-learning-example-copy{min-width:0; padding:20px;}
+  .field-learning-example-copy>span:first-child{display:block; margin-bottom:8px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase;}
+  .field-learning-example strong{display:block; margin-bottom:4px; color:var(--navy);}
+  .field-learning-example-description{display:block; color:var(--navy-soft); font-size:0.86rem; line-height:1.45;}
+
+  /* Shared bordered panels for the homepage's main topic sections */
+  :is(.about,#process,.achievements,.recognition,.ranum-collaboration,.hiriya-case-study,.coral-quest,.place,.community-events,.partners,.latest) > .wrap{
+    padding:36px;
+    border:1px solid var(--line);
+    border-top:4px solid var(--blue);
+    border-radius:6px;
+    background:#E1EEF5;
+  }
+
+  /* ---------- RANUM INTERNATIONAL FIELD LEARNING ---------- */
+  .ranum-collaboration{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .ranum-collaboration,.hiriya-case-study,.coral-quest{scroll-margin-top:90px;}
+  .ranum-collaboration .section-head{margin-bottom:42px;}
+  .ranum-lead{margin-top:14px; color:var(--blue-deep); font-family:'Space Grotesk',sans-serif; font-size:clamp(1.1rem,2vw,1.35rem); font-weight:600;}
+  .ranum-intro{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:56px; align-items:start;}
+  .ranum-collage{display:grid; gap:10px; align-self:start; min-width:0;}
+  .ranum-collage-support{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; align-items:start;}
+  .ranum-collage-item{min-width:0; margin:0; overflow:hidden; border-radius:6px; background:#E1EEF5;}
+  .ranum-collage-item img{display:block; width:100%; height:auto;}
+  .ranum-collage-item figcaption{padding:9px 11px; color:var(--navy-soft); font-family:'IBM Plex Mono',monospace; font-size:0.65rem; line-height:1.4; background:var(--paper-tint);}
+  .ranum-copy>p{margin-bottom:18px; color:var(--navy-soft);}
+  .ranum-details{display:grid; grid-template-columns:minmax(120px,0.7fr) minmax(0,1.3fr); margin:28px 0; padding:24px; border:1px solid var(--line); border-radius:6px; background:#E1EEF5;}
+  .ranum-details dt,.ranum-details dd{padding:10px 0; border-bottom:1px solid rgba(20,50,74,0.1);}
+  .ranum-details dt:nth-last-of-type(1),.ranum-details dd:nth-last-of-type(1){border-bottom:0;}
+  .ranum-details dt{font-family:'IBM Plex Mono',monospace; color:var(--blue-deep); font-size:0.7rem; letter-spacing:0.04em; text-transform:uppercase;}
+  .ranum-details dd{margin:0; color:var(--navy); font-size:0.9rem;}
+  .ranum-learning{margin-top:40px; padding:34px; border-left:4px solid var(--blue); background:var(--paper-tint);}
+  .ranum-learning h3{font-size:1.45rem; margin-bottom:14px;}
+  .ranum-learning p{max-width:82ch; color:var(--navy-soft);}
+  .ranum-learning p+p{margin-top:12px;}
+
+  /* ---------- HIRIYA MARINE SCIENCE FIELD LEARNING ---------- */
+  .hiriya-case-study{background:var(--paper-tint); border-bottom:1px solid var(--line);}
+  .hiriya-grid{display:grid; grid-template-columns:minmax(0,1.08fr) minmax(320px,0.92fr); gap:56px; align-items:start;}
+  .hiriya-copy .section-tag{margin-bottom:14px;}
+  .hiriya-copy h2{font-size:clamp(2rem,3.5vw,3rem); margin-bottom:10px;}
+  .hiriya-lead{margin-bottom:24px; color:var(--blue-deep); font-family:'Space Grotesk',sans-serif; font-size:1.2rem; font-weight:600;}
+  .hiriya-copy>p:not(.hiriya-lead){margin-bottom:18px; color:var(--navy-soft);}
+  .hiriya-gallery{display:grid; gap:10px; min-width:0;}
+  .hiriya-gallery-support{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; align-items:start;}
+  .hiriya-photo{margin:0; overflow:hidden; border-radius:6px; background:#E1EEF5;}
+  .hiriya-photo img{display:block; width:100%; height:auto;}
+  .hiriya-photo figcaption{padding:9px 11px; color:var(--navy-soft); font-family:'IBM Plex Mono',monospace; font-size:0.65rem; background:var(--paper);}
+  .hiriya-details{display:grid; grid-template-columns:minmax(110px,0.7fr) minmax(0,1.3fr); margin:26px 0 18px; padding:22px; border:1px solid var(--line); border-radius:6px; background:var(--paper);}
+  .hiriya-details dt,.hiriya-details dd{padding:9px 0; border-bottom:1px solid rgba(20,50,74,0.1);}
+  .hiriya-details dt{color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase;}
+  .hiriya-details dd{margin:0; color:var(--navy); font-size:0.88rem;}
+  .hiriya-message{margin-top:40px; padding:30px; border-left:4px solid var(--blue); background:var(--paper);}
+  .hiriya-message span{display:block; margin-bottom:10px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em;}
+  .hiriya-message p{max-width:82ch; color:var(--navy-soft);}
+
+  /* ---------- CORAL QUEST YOUTH ENVIRONMENTAL LEARNING ---------- */
+  .coral-quest{background:var(--paper); border-bottom:1px solid var(--line);}
+  .coral-quest-grid{display:grid; grid-template-columns:minmax(0,1.08fr) minmax(320px,0.92fr); gap:56px; align-items:start;}
+  .coral-quest-header{min-width:0;}
+  .coral-quest-header .section-tag{margin-bottom:14px;}
+  .coral-quest-header h2{font-size:clamp(2rem,3.5vw,3rem); color:var(--navy);}
+  .coral-quest-subtitle{margin-top:10px; color:var(--blue-deep); font-family:'Space Grotesk',sans-serif; font-size:1.2rem; font-weight:600;}
+  .coral-quest-supporting{margin-top:5px; color:var(--navy); font-weight:600;}
+  .coral-quest-intro{margin-top:24px; color:var(--navy-soft);}
+  .coral-quest-intro p+p{margin-top:18px;}
+  .coral-quest-collage{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:10px; align-items:start; margin-top:48px;}
+  .coral-quest-photo{min-width:0; margin:0; overflow:hidden; border-radius:6px; background:#E1EEF5;}
+  .coral-quest-photo img{display:block; width:100%; height:auto;}
+  .coral-quest-photo figcaption{padding:9px 11px; color:var(--navy-soft); font-family:'IBM Plex Mono',monospace; font-size:0.65rem; line-height:1.4; background:var(--paper-tint);}
+  .coral-quest-story{display:grid; grid-template-columns:1fr; gap:16px; width:min(100%,820px); margin:34px auto 0;}
+  .coral-quest-callout{display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,280px); column-gap:24px; align-items:start; padding:24px; border-left:4px solid var(--blue); background:var(--paper-tint);}
+  .coral-quest-callout:not(.coral-quest-callout-local){grid-template-columns:1fr; padding:20px;}
+  .coral-quest-callout h3{font-size:clamp(1.3rem,2.2vw,1.7rem);}
+  .coral-quest-callout p{margin-top:10px; color:var(--navy-soft); font-size:0.9rem; line-height:1.5;}
+  .coral-quest-callout>h3,.coral-quest-callout>p,.coral-quest-callout>.coral-quest-callout-label{grid-column:1;}
+  .coral-quest-callout>.coral-quest-collage{grid-column:1 / -1; display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr); grid-template-rows:repeat(2,minmax(0,1fr)); gap:8px; width:100%; height:460px; margin-top:18px;}
+  .coral-quest-callout>.coral-quest-collage .coral-quest-classroom-photo{grid-column:1; grid-row:1 / 3; width:100%; height:100%;}
+  .coral-quest-callout>.coral-quest-collage .coral-quest-photo{width:100%; height:100%;}
+  .coral-quest-callout>.coral-quest-collage img{width:100%; height:calc(100% - 35px); object-fit:cover; object-position:center;}
+  .coral-quest-callout>.coral-quest-collage figure:first-child img{object-position:center 32%;}
+  .coral-quest-callout>.coral-quest-collage .coral-quest-photo-main img{object-position:center 85%;}
+  .coral-quest-classroom-photo{grid-column:2; grid-row:1 / span 5; width:100%; margin:0; overflow:hidden; border-radius:6px; background:#E1EEF5;}
+  .coral-quest-classroom-photo img{display:block; width:100%; height:auto;}
+  .coral-quest-classroom-photo figcaption{padding:9px 11px; color:var(--navy-soft); font-family:'IBM Plex Mono',monospace; font-size:0.65rem; line-height:1.4; background:var(--paper);}
+  .coral-quest-callout-local{border:1px solid var(--line); border-left:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  .coral-quest-callout-label{display:block; margin-bottom:12px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .coral-quest-local-photo{grid-column:2; grid-row:1 / span 4; width:100%; margin:0;}
+  .coral-quest-lower{margin-top:48px;}
+  .coral-quest-closing h3{font-size:clamp(1.65rem,3vw,2.3rem);}
+  .coral-quest-closing p{margin-top:16px; color:var(--navy-soft);}
+  .coral-quest-details{display:grid; grid-template-columns:minmax(120px,0.65fr) minmax(0,1.35fr); padding:22px; border:1px solid var(--line); border-radius:6px; background:#E1EEF5;}
+  .coral-quest-details dt,.coral-quest-details dd{padding:9px 0; border-bottom:1px solid rgba(20,50,74,0.1);}
+  .coral-quest-details dt{color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.67rem; text-transform:uppercase;}
+  .coral-quest-details dd{margin:0; color:var(--navy); font-size:0.86rem; overflow-wrap:anywhere;}
+
+  /* ---------- 6. OUR ACHIEVEMENTS ---------- */
+  .achievements{background:var(--paper); padding:100px 0;}
+  .achievement-grid{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:24px;
+  }
+  .achievement-card{
+    background:#E1EEF5;
+    border:1px solid var(--line); border-radius:6px; padding:30px 22px;
+    text-align:left;
+    overflow:hidden;
+  }
+  .achievement-card-image{display:block; width:calc(100% + 44px); height:170px; margin:-30px -22px 24px; object-fit:cover; object-position:center 48%;}
+  .achievement-card-image.rope-nursery-image{object-position:center 58%;}
+  .achievement-number{
+    font-family:'Space Grotesk', sans-serif; font-size:2.4rem; font-weight:700; line-height:1; color:var(--blue-deep);
+    margin-bottom:12px;
+  }
+  .achievement-number.achievement-word{font-size:1.2rem; letter-spacing:0.03em; text-transform:uppercase;}
+  .achievement-label{
+    font-size:0.95rem; color:var(--navy-soft); line-height:1.5;
+  }
+  .impact-updated{margin-top:24px; color:var(--navy-soft); font-size:0.82rem;}
+  .achievement-detail{margin-top:10px; color:var(--navy-soft); font-size:0.78rem; line-height:1.45;}
+
+  /* ---------- RECOGNITION ---------- */
+  .recognition{background:var(--paper-tint); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .recognition-grid{display:grid; grid-template-columns:minmax(0,1.08fr) minmax(320px,0.92fr); grid-template-areas:"copy story" "action story"; gap:28px 64px; align-items:start;}
+  .recognition-copy{grid-area:copy;}
+  .recognition-copy h2{max-width:18ch; margin-bottom:22px;}
+  .recognition-copy>p{max-width:62ch; color:var(--navy-soft); margin-bottom:18px;}
+  .recognition-highlight{padding:20px 22px; border-left:3px solid var(--blue); background:rgba(225,238,245,0.72);}
+  .recognition-meta{display:block; margin-top:24px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .recognition-action{grid-area:action; justify-self:start;}
+  .recognition-story{grid-area:story; padding:34px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:6px; background:var(--paper); box-shadow:0 18px 45px rgba(20,50,74,0.07);}
+  .recognition-story-label{display:block; margin-bottom:18px; color:var(--blue-deep); font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;}
+  .recognition-story-title{font-size:clamp(1.45rem,2.4vw,2rem); margin-bottom:18px; overflow-wrap:anywhere;}
+  .recognition-story-source{color:var(--navy-soft); font-size:0.86rem; margin-bottom:24px;}
+  .recognition-story blockquote{margin:0 0 24px; padding:20px; border-left:2px solid var(--blue); background:#E1EEF5; color:var(--navy); font-size:0.98rem; line-height:1.65;}
+  .recognition-story a{color:var(--blue-deep); font-weight:600; text-decoration:none;}
+  .recognition-image{margin-bottom:24px; overflow:hidden; border-radius:4px;}
+  .recognition-image img{display:block; width:100%; height:auto;}
+  .recognition-image figcaption{padding:9px 11px; background:var(--paper-tint); color:var(--navy-soft); font-family:'IBM Plex Mono',monospace; font-size:0.66rem; line-height:1.4;}
+
+
+  /* ---------- LATEST FROM MURAKA ---------- */
+  .latest{background:var(--paper);}
+  .latest-instagram{display:flex; align-items:center; justify-content:space-between; gap:28px; padding:30px; border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:6px; background:#E1EEF5;}
+  .latest-instagram p{max-width:66ch; color:var(--navy-soft); font-size:0.95rem;}
+  .latest-instagram a{flex:0 0 auto; color:var(--blue-deep); font-size:0.92rem; font-weight:600; text-decoration:none;}
+
+  /* ---------- 10. DONATE BANNER — matches "DONATE BANNER" in the HTML below ---------- */
+  .cta-band{
+    background:var(--blue-deep); color:var(--paper); text-align:center; padding:90px 32px;
+    position:relative; overflow:hidden;
+  }
+  .cta-band h2{font-size:clamp(2rem,4vw,3rem); max-width:20ch; margin:0 auto 22px;}
+  .cta-band p{max-width:50ch; margin:0 auto 34px; color:rgba(251,253,254,0.9);}
+  .cta-band .btn-primary{border:1px solid var(--paper); background:var(--navy); color:var(--paper);}
+  .cta-band .btn-primary:hover,.cta-band .btn-primary:focus-visible{background:var(--paper); color:var(--navy);}
+  .cta-band .donation-trust{max-width:64ch; margin:22px auto 0; color:rgba(251,253,254,0.75); font-size:0.82rem;}
+
+  /* ---------- 11. FOOTER — matches "FOOTER" in the HTML below ---------- */
+  footer{background:var(--navy); color:rgba(251,253,254,0.65); padding:60px 32px 30px;}
+  .footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(251,253,254,0.12);}
+  .footer-brand{display:flex; align-items:center; gap:10px; font-family:'Space Grotesk',sans-serif; color:var(--paper); font-size:1.2rem; margin-bottom:14px;}
+  footer h4{font-family:'IBM Plex Mono', monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:rgba(251,253,254,0.5); margin-bottom:16px;}
+  footer ul{list-style:none; display:flex; flex-direction:column; gap:10px;}
+  footer a{text-decoration:none; font-size:0.9rem; color:rgba(251,253,254,0.75); transition:color 0.2s;}
+  footer a:hover{color:var(--blue-bright);}
+  .social-link{display:inline-flex; align-items:center; gap:9px;}
+  .social-link svg{width:19px; height:19px; flex:0 0 auto; fill:currentColor;}
+  .footer-bottom{padding-top:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.8rem; font-family:'IBM Plex Mono', monospace; color:rgba(251,253,254,0.4);}
+  .footer-identity{max-width:38ch; font-size:0.9rem;}
+  .footer-location{display:block; margin:5px 0 12px; color:rgba(251,253,254,0.78);}
+  .footer-utility{display:flex; flex-wrap:wrap; gap:18px; margin-top:16px;}
+
+  @media (max-width: 1080px){
+    .about .section-head h2{white-space:normal;}
+    .navbar{position:relative;}
+    .nav-toggle{display:inline-flex; margin-left:auto; margin-right:12px;}
+    nav{display:none; position:absolute; top:calc(100% + 1px); left:20px; right:20px; max-height:calc(100vh - 92px); overflow-y:auto; background:var(--paper); border:1px solid var(--line); border-radius:0 0 6px 6px; box-shadow:0 14px 30px rgba(20,50,74,0.12);}
+    nav.is-open{display:block;}
+    nav ul{display:flex; flex-direction:column; gap:0;}
+    nav li + li{border-top:1px solid var(--line);}
+    nav a{display:block; padding:13px 18px;}
+    nav a:hover{transform:none; background:var(--paper-tint);}
+    .why-grid, .place-grid, .dhirun-grid{grid-template-columns:1fr;}
+    .bml-project-card{grid-template-columns:1fr;}
+    .bml-project-gallery{grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr); height:580px;}
+    .ranum-intro{grid-template-columns:1fr; gap:34px;}
+    .hiriya-grid{grid-template-columns:1fr; gap:34px;}
+    .field-learning-examples{grid-template-columns:1fr;}
+    .coral-quest-grid{grid-template-columns:1fr; gap:34px;}
+    .coral-quest-collage{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .coral-quest-story,.coral-quest-lower{grid-template-columns:1fr;}
+    .ranum-collage-support{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .ranum-collage-support .ranum-collage-item:last-child{grid-column:1 / -1;}
+    .about-grid{grid-template-columns:1fr;}
+    .partner-grid{grid-template-columns:repeat(2,1fr);}
+    .partner-detail-grid{grid-template-columns:1fr;}
+    .dhirun-visual{height:auto; min-height:620px;}
+    .work-gateway-inner{align-items:flex-start; flex-direction:column;}
+    .research-gateway{align-items:flex-start; flex-direction:column;}
+    .achievement-grid{grid-template-columns:repeat(2, 1fr);}
+    .recognition-grid{grid-template-columns:1fr; grid-template-areas:"copy" "story" "action"; gap:28px;}
+    .footer-grid{grid-template-columns:1fr; gap:28px;}
+    .hero-mark{opacity:1; width:280px; height:280px;}
+    .process-item{grid-template-columns:1fr; gap:10px;}
+    #education-modal .research-grid,#education-modal .education-choices .partnership-options{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width: 760px){
+    .process-layout{grid-template-columns:1fr; gap:34px;}
+    .process-video{position:relative; top:auto; width:min(100%,420px); margin-inline:auto;}
+  }
+  @media (max-width: 560px){
+    .wrap, .navbar{padding-left:20px; padding-right:20px;}
+    .bml-project-card{padding:24px;}
+    .dhirun-grid{padding:24px;}
+    .field-learning-card{padding:24px;}
+    :is(.about,#process,.achievements,.recognition,.ranum-collaboration,.hiriya-case-study,.coral-quest,.place,.community-events,.partners,.latest) > .wrap{padding:24px;}
+    .work-gateway-inner{padding:28px 22px;}
+    .work-gateway .btn{width:100%;}
+    .bml-project-gallery{grid-template-columns:1fr; grid-template-rows:none; height:auto;}
+    .bml-project-photo:first-child,.bml-project-photo{grid-column:auto; grid-row:auto; aspect-ratio:4 / 5;}
+    .hero{padding:72px 20px 56px;}
+    .hero::before{background:linear-gradient(rgba(7,28,43,0.82),rgba(7,28,43,0.82)),url('images/dhirun-community-training.png') center 64% / cover no-repeat;}
+    section{padding:72px 0;}
+    .achievement-grid, .partner-grid, .dhirun-pillars{grid-template-columns:1fr;}
+    .latest-instagram{align-items:flex-start; flex-direction:column; padding:24px 20px;}
+    .dhirun-collaboration{padding:22px 18px;}
+    .dhirun-collaborators{grid-template-columns:1fr;}
+    .dhirun-collaboration-mark{justify-self:center; transform:rotate(90deg);}
+    .ranum-collage-support{grid-template-columns:1fr;}
+    .ranum-collage-support .ranum-collage-item:last-child{grid-column:auto;}
+    .ranum-details{grid-template-columns:1fr;}
+    .field-learning-examples{grid-template-columns:1fr;}
+    .hiriya-gallery-support{grid-template-columns:1fr;}
+    .hiriya-details{grid-template-columns:1fr;}
+    .hiriya-details dt{padding-bottom:3px; border-bottom:0;}
+    .hiriya-details dd{padding-top:0;}
+    .coral-quest-collage{grid-template-columns:1fr;}
+    .coral-quest-photo-main{grid-column:auto;}
+    .coral-quest-details{grid-template-columns:1fr;}
+    .coral-quest-details dt{padding-bottom:3px; border-bottom:0;}
+    .coral-quest-details dd{padding-top:0;}
+    .coral-quest-callout{padding:22px 18px;}
+    .coral-quest-callout{grid-template-columns:1fr; row-gap:0;}
+    .coral-quest-callout>h3,.coral-quest-callout>p,.coral-quest-callout>.coral-quest-callout-label{grid-column:1;}
+    .coral-quest-classroom-photo,.coral-quest-local-photo{grid-column:1; grid-row:auto; width:min(100%,360px); margin:24px auto 0;}
+    .coral-quest-callout>.coral-quest-collage{grid-template-columns:1fr; grid-template-rows:none; height:auto;}
+    .coral-quest-callout>.coral-quest-collage .coral-quest-classroom-photo{grid-column:1; grid-row:auto; width:100%; height:auto; margin:0;}
+    .coral-quest-callout>.coral-quest-collage .coral-quest-photo{height:auto;}
+    .coral-quest-callout>.coral-quest-collage img{height:auto; aspect-ratio:4 / 3;}
+    .ranum-details dt{padding-bottom:3px; border-bottom:0;}
+    .ranum-details dd{padding-top:0;}
+    .ranum-copy .btn{width:100%; justify-content:center; text-align:center;}
+    .ranum-learning{padding:28px 22px;}
+    .recognition-story{padding:26px 22px;}
+    .recognition-action{width:100%; justify-content:center; text-align:center;}
+    .dhirun-visual{min-height:auto; grid-template-columns:1fr; grid-template-rows:none;}
+    .dhirun-photo{grid-column:auto; min-height:280px;}
+    .adoption-modal{padding:12px;}
+    .adoption-dialog{max-height:calc(100vh - 24px); padding:30px 20px 24px;}
+    .adoption-step-action{width:100%; justify-content:center; text-align:center;}
+    .donation-modal{padding:12px;}
+    .donation-dialog{max-height:calc(100vh - 24px); padding:30px 20px 24px;}
+    .donation-amounts{grid-template-columns:repeat(2,1fr);}
+    .partnership-modal{padding:12px;}
+    .partnership-dialog{max-height:calc(100vh - 24px); padding:30px 20px 24px;}
+    .partnership-options{grid-template-columns:1fr;}
+    .partnership-contacts{flex-direction:column;}
+    .partnership-contact{justify-content:center; width:100%;}
+    .partnership-project{align-items:flex-start; flex-direction:column;}
+    .research-modal{padding:12px;}
+    .research-dialog{max-height:calc(100vh - 24px); padding:30px 20px 24px;}
+    .research-grid{grid-template-columns:1fr;}
+    #education-modal .research-dialog{padding:18px 12px 14px;}
+    #education-modal .research-grid,#education-modal .education-choices .partnership-options{grid-template-columns:1fr;}
+  }
+  /* ============================================================
+     MOTION & INTERACTION SYSTEM
+     ============================================================ */
+  .reveal{opacity:1; transform:none;}
+  .motion-ready .reveal{
+    transition:opacity 800ms cubic-bezier(0.22,1,0.36,1),transform 800ms cubic-bezier(0.22,1,0.36,1);
+    transition-delay:var(--reveal-delay,0ms);
+    will-change:opacity,transform;
+  }
+  .motion-ready .reveal:not(.is-visible){opacity:0;}
+  .motion-ready .reveal-up:not(.is-visible){transform:translate3d(0,24px,0);}
+  .motion-ready .reveal-left:not(.is-visible){transform:translate3d(-24px,0,0);}
+  .motion-ready .reveal-right:not(.is-visible){transform:translate3d(24px,0,0);}
+  .motion-ready .reveal-scale:not(.is-visible){transform:scale(0.965);}
+  .reveal.is-visible{will-change:auto;}
+
+  .motion-ready .hero-reveal{
+    opacity:0; transform:translate3d(0,20px,0);
+    transition:opacity 760ms cubic-bezier(0.22,1,0.36,1),transform 760ms cubic-bezier(0.22,1,0.36,1);
+    transition-delay:var(--hero-delay,0ms);
+  }
+  .motion-ready .hero-reveal.is-visible{opacity:1; transform:none;}
+  .process-item{position:relative;}
+  .process-item::before{content:''; position:absolute; top:-1px; left:0; width:100%; height:1px; background:var(--blue); transform:scaleX(0); transform-origin:left; opacity:0.45; transition:transform 850ms cubic-bezier(0.22,1,0.36,1) var(--reveal-delay,0ms);}
+  .process-item.is-visible::before{transform:scaleX(1);}
+  header{transition:background-color 220ms ease,box-shadow 220ms ease,border-color 220ms ease;}
+  header.scrolled{background:rgba(251,253,254,0.97); border-bottom-color:rgba(20,50,74,0.2); box-shadow:0 8px 24px rgba(10,31,47,0.07);}
+
+  @media (hover:hover) and (pointer:fine){
+    .about-card,.achievement-card,.involve-card{transition:transform 210ms ease,border-color 210ms ease,box-shadow 210ms ease;}
+    .about-card:hover,.achievement-card:hover,.involve-card:hover{transform:translateY(-4px); border-color:rgba(44,109,158,0.35); box-shadow:0 14px 28px rgba(10,31,47,0.08);}
+    .ranum-collage-item img,.hiriya-photo img,.coral-quest-photo img{transition:transform 600ms cubic-bezier(0.22,1,0.36,1);}
+    .ranum-collage-item:hover img,.hiriya-photo:hover img,.coral-quest-photo:hover img{transform:scale(1.025);}
+    .recognition-story a,.partner-detail a,.involve-card a,.latest-instagram a{transition:color 200ms ease,transform 200ms ease;}
+    .recognition-story a:hover,.partner-detail a:hover,.involve-card a:hover,.latest-instagram a:hover{transform:translateX(3px);}
+    .btn{transition:transform 200ms ease,background 200ms ease,box-shadow 200ms ease;}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 9px 20px rgba(10,31,47,0.14);}
+  }
+
+  @media (max-width:767px){
+    .motion-ready .reveal-up:not(.is-visible),.motion-ready .reveal-left:not(.is-visible),.motion-ready .reveal-right:not(.is-visible){transform:translate3d(0,14px,0);}
+    .motion-ready .hero-reveal{transform:translate3d(0,14px,0);}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .motion-ready .reveal,.motion-ready .reveal:not(.is-visible),.motion-ready .hero-reveal,.motion-ready .hero-reveal.is-visible{opacity:1 !important; transform:none !important; transition:none !important; animation:none !important;}
+    .process-item::before{transform:scaleX(1) !important; transition:none !important;}
+    .hero-mark{transform:none !important;}
+    header,.btn,.about-card,.achievement-card,.involve-card,.ranum-collage-item img,.hiriya-photo img,.coral-quest-photo img,.recognition-story a,.partner-detail a,.involve-card a,.latest-instagram a{transition:none !important;}
+  }
+</style>
+<link rel="stylesheet" href="css/mobile-responsive.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <div class="navbar">
+    <a class="brand" href="index.html" aria-label="Muraka Farm home">
+      <img src="images/muraka-logo.png" alt="Muraka Farm">
+      <span>Muraka<small>FARM</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="primaryNav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="community-action.html">Community Action</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="dharavandhoo.html">Dharavandhoo</a></li>
+        <li><a href="work-with-us.html">Work With Us</a></li>
+        <li class="mobile-menu-donate"><a href="#donate">Donate</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="#donate">Donate</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <img class="hero-mark" src="images/muraka-logo.png" alt="" aria-hidden="true">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Dharavandhoo · Baa Atoll · Maldives</span>
+    <h1 class="display">We grow reefs, <em>frame by frame</em>.</h1>
+    <p class="hero-sub">Muraka Farm is a community-led environmental organisation based in Dharavandhoo, in Baa Atoll's UNESCO Biosphere Reserve. We restore coral reefs, build local conservation capacity and connect communities with the marine environment through restoration, education and research.</p>
+    <div class="hero-actions">
+      <a href="#adoption-modal" class="btn btn-primary" data-adoption-open aria-haspopup="dialog">Adopt a Muraka Frame</a>
+      <a href="#volunteer-modal" class="btn btn-ghost" data-volunteer-open aria-haspopup="dialog">Volunteer with us</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">1,496+</div>
+        <div class="stat-label">Coral fragments saved</div>
+      </div>
+      <div>
+        <div class="stat-num">64</div>
+        <div class="stat-label">Muraka frames in use</div>
+      </div>
+      <div>
+        <div class="stat-num">2</div>
+        <div class="stat-label">Active rope nurseries</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MURAKA FARM -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">About Muraka Farm</span>
+      <h2>Local knowledge. Shared responsibility. Living reefs.</h2>
+    </div>
+    <p class="about-intro">Muraka Farm is a community-led environmental organisation based in Dharavandhoo, Baa Atoll. We work to restore coral reefs, build local conservation capacity, educate young people, and strengthen community stewardship of the marine environment.</p>
+    <div class="about-grid">
+      <article class="about-card">
+        <span class="num">01 — OUR MISSION</span>
+        <h3>Restore and protect</h3>
+        <p>Restore and protect marine ecosystems through practical, community-led action.</p>
+      </article>
+      <article class="about-card">
+        <span class="num">02 — OUR VISION</span>
+        <h3>Healthy reefs, locally cared for</h3>
+        <p>Healthy reefs cared for by the communities whose lives and futures depend on them.</p>
+      </article>
+      <article class="about-card">
+        <span class="num">03 — OUR APPROACH</span>
+        <h3>Connected conservation</h3>
+        <p>Restoration · Education · Research · Community</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:36px;">
+          <span class="section-tag">Why it matters</span>
+          <h2>When the reef disappears, we lose more than coral.</h2>
+          <p class="why-subhead">We lose protection. Biodiversity. Livelihoods. A part of home.</p>
+        </div>
+        <div class="why-copy">
+          <p>In the Maldives, the reef is part of everyday life. It supports the fish we eat, protects our islands from waves and erosion, creates the beaches visitors travel across the world to see, and provides habitat for an extraordinary diversity of marine life.</p>
+          <p>But reefs are being pushed beyond their ability to recover. Rising ocean temperatures, repeated bleaching events and local pressures can turn a living reef into bare structure within a short time — while natural recovery can take years.</p>
+          <p>For a small island community like Dharavandhoo, protecting the reef means protecting our shoreline, our livelihoods, our biodiversity and the future of the generations who will call this island home.</p>
+        </div>
+        <div class="quote-block">
+          <p>“We are not restoring coral simply to rebuild a reef. We are protecting a living system that our island depends on.”</p>
+          <cite>— Muraka Farm</cite>
+        </div>
+      </div>
+      <div class="heat-panel">
+        <span class="section-tag">One reef. Many connections.</span>
+        <div class="reef-impact-list">
+          <div class="reef-impact"><strong>COASTLINES</strong><span>Healthy reefs reduce wave energy and help protect our islands.</span></div>
+          <div class="reef-impact"><strong>MARINE LIFE</strong><span>Coral reefs provide shelter, feeding grounds and nursery habitat.</span></div>
+          <div class="reef-impact"><strong>LIVELIHOODS</strong><span>Fishing and tourism both depend on healthy marine ecosystems.</span></div>
+          <div class="reef-impact"><strong>OUR FUTURE</strong><span>What survives tomorrow depends on what communities protect today.</span></div>
+        </div>
+        <div class="evidence-callout">
+          <div class="big">93%</div>
+          <div class="cap">of Maldivian reef area could face very high heat stress by 2080 under a high-emissions scenario.</div>
+          <a class="foot" href="https://maldives.un.org/en/316976-extreme-heat-and-coral-reefs-what-it-means-maldives" target="_blank" rel="noopener noreferrer">SOURCE — UN MALDIVES · VIEW ANALYSIS →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Our process</span>
+      <h2>How a reef gets rebuilt</h2>
+      <p>Coral restoration is a patient, hands-on cycle that moves from responsible fragment rescue and nursery care to reef outplanting and long-term monitoring.</p>
+    </div>
+    <div class="process-layout">
+      <div class="process-video">
+        <iframe src="https://www.youtube.com/embed/jbfJB7VJUSU?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=jbfJB7VJUSU&amp;enablejsapi=1&amp;playsinline=1&amp;rel=0" title="Muraka Farm coral restoration process video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="process-list">
+        <div class="process-item">
+          <div class="process-step">01 — RESCUE</div>
+          <div>
+            <h3>Collect coral fragments</h3>
+            <p>We rescue naturally broken, displaced, or vulnerable coral fragments that have a good chance of survival and can be responsibly used for restoration.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <div class="process-step">02 — NURSE</div>
+          <div>
+            <h3>Grow them in the rope nursery</h3>
+            <p>Fragments are secured in Muraka Farm's rope nurseries, where they are cared for and given time to establish and grow before healthy fragments are transferred onto Muraka frames for reef restoration.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <div class="process-step">03 — RESTORE</div>
+          <div>
+            <h3>From nursery to reef</h3>
+            <p>Once the coral fragments are ready, healthy fragments are collected from the rope nursery and carefully attached to Muraka frames. The completed Muraka frames are then placed in suitable damaged reef areas, where the corals can continue growing and contribute to reef recovery.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <div class="process-step">04 — MONITOR</div>
+          <div>
+            <h3>Track survival and growth</h3>
+            <p>We regularly monitor survival, growth, health and bleaching, using what we learn to improve our restoration methods and guide long-term reef care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements" id="achievements">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Our achievements</span>
+      <h2>Small actions, measurable reef recovery.</h2>
+      <p>Since the project began, our team has been turning local commitment into visible reef restoration outcomes across Dharavandhoo.</p>
+    </div>
+    <div class="achievement-grid">
+      <div class="achievement-card">
+        <img class="achievement-card-image" src="images/fragments-saved.jpg" alt="A rescued coral fragment held beside the shore in Dharavandhoo" loading="lazy" decoding="async">
+        <div class="achievement-number">1,496+</div>
+        <div class="achievement-label">Fragments saved</div>
+      </div>
+      <div class="achievement-card">
+        <img class="achievement-card-image" src="images/muraka-frames-in-use.jpg" alt="Muraka coral restoration frames prepared for use" loading="lazy" decoding="async">
+        <div class="achievement-number">64</div>
+        <div class="achievement-label">Muraka frames in use</div>
+      </div>
+      <div class="achievement-card">
+        <img class="achievement-card-image rope-nursery-image" src="images/rope-nurseries-active.jpg" alt="Coral fragments growing on an active underwater rope nursery" loading="lazy" decoding="async">
+        <div class="achievement-number">2</div>
+        <div class="achievement-label">Rope nurseries active</div>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-number achievement-word">Community-led</div>
+        <div class="achievement-label">Local care &amp; monitoring</div>
+        <p class="achievement-detail">Restoration activities are supported through local participation, monitoring and long-term reef stewardship.</p>
+      </div>
+    </div>
+    <p class="impact-updated">Impact figures updated August 2026.</p>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="recognition" id="recognition">
+  <div class="wrap recognition-grid">
+    <div class="recognition-copy">
+      <span class="section-tag">Recognition</span>
+      <h2>Featured by the United Nations in the Maldives</h2>
+      <p>Muraka Farm's community-led coral restoration work in Dharavandhoo was featured by the United Nations in the Maldives in its 2026 story on extreme heat, coral reefs and reef resilience.</p>
+      <p class="recognition-highlight">The UN story highlights community-based restoration initiatives led by Muraka in Dharavandhoo, including coral gardening, growing coral fragments in underwater nurseries and transplanting them to damaged reef areas.</p>
+      <p>It also features reflections from Muraka team member Ikraam Ali on coral bleaching, restoration, community participation and the importance of helping Maldivian reefs recover.</p>
+      <span class="recognition-meta">United Nations in the Maldives · 09 June 2026</span>
+    </div>
+    <article class="recognition-story">
+      <figure class="recognition-image">
+        <a href="https://maldives.un.org/en/316976-extreme-heat-and-coral-reefs-what-it-means-maldives" target="_blank" rel="noopener noreferrer"><img src="images/un-maldives-coral-heat-stress-map.jpg" alt="Map projecting long-term coral reef heat stress across the Maldives under two climate scenarios" loading="lazy" decoding="async"></a>
+        <figcaption>Long-term coral heat-stress projections for the Maldives · Figure via United Nations in the Maldives</figcaption>
+      </figure>
+      <span class="recognition-story-label">Featured story</span>
+      <h3 class="recognition-story-title">Extreme Heat and Coral Reefs: What It Means for the Maldives</h3>
+      <p class="recognition-story-source">United Nations in the Maldives<br>09 June 2026</p>
+      <blockquote>Community-based restoration initiatives, such as those led by Muraka in Dharavandhoo, are helping with reef recovery.</blockquote>
+      <a href="https://maldives.un.org/en/316976-extreme-heat-and-coral-reefs-what-it-means-maldives" target="_blank" rel="noopener noreferrer">Read the full story →</a>
+    </article>
+    <a class="btn btn-primary recognition-action" href="https://maldives.un.org/en/316976-extreme-heat-and-coral-reefs-what-it-means-maldives" target="_blank" rel="noopener noreferrer">Read the UN story →</a>
+  </div>
+</section>
+
+<!-- EVENTS / COMMUNITY ACTION -->
+<section class="community-events" id="community-action">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Events / Community Action</span>
+      <h2>Working together for a cleaner island and reef.</h2>
+      <p>Community clean-ups bring students, local organisations, businesses and island stakeholders together to care for Dharavandhoo's beaches and marine environment.</p>
+    </div>
+    <div class="event-grid">
+      <a class="event-card" href="community-action.html#scouts-beach-cleanup" aria-label="View the Dharavandhoo beach cleaning with Baa Atoll School Scouts">
+        <img class="event-card-image" src="images/photo_2024-11-02_07-53-54.jpg" alt="Baa Atoll School Scouts and community members after cleaning Dharavandhoo beach" loading="lazy" decoding="async">
+        <div class="event-copy">
+          <span class="event-meta">02 November 2024 · Beach action</span>
+          <h3>Dharavandhoo Beach Cleaning with Baa Atoll School Scouts</h3>
+          <p>A youth-led shoreline clean-up bringing Baa Atoll School Scouts into practical environmental action while encouraging responsibility for the island's beaches and surrounding ocean.</p>
+        </div>
+      </a>
+      <a class="event-card" href="community-action.html#house-reef-cleanup" aria-label="View the Dharavandhoo house reef cleaning with community NGOs and stakeholders">
+        <img class="event-card-image" src="images/photo_2025-04-26_18-41-44.jpg" alt="Waste collected during the Dharavandhoo house reef clean-up" loading="lazy" decoding="async">
+        <div class="event-copy">
+          <span class="event-meta">25 April 2025 · Reef action</span>
+          <h3>Dharavandhoo House Reef Cleaning with Community NGOs and Stakeholders</h3>
+          <p>A collaborative effort involving community NGOs and local stakeholders to remove waste from the house reef and support a healthier marine environment close to the island.</p>
+        </div>
+      </a>
+      <a class="event-card" href="community-action.html#soe-beach-cleanup" aria-label="View the Dharavandhoo beach cleaning with SOEs and stakeholders">
+        <img class="event-card-image" src="images/photo_2026-08-10_00-05-05.jpg" alt="Muraka Farm members handling a collection bag during the Dharavandhoo beach clean-up" loading="lazy" decoding="async">
+        <div class="event-copy">
+          <span class="event-meta">6 June 2026 · Island action</span>
+          <h3>Dharavandhoo Beach Cleaning with SOEs and Stakeholders</h3>
+          <p>A coordinated beach clean-up bringing state-owned enterprises and island stakeholders together to collect shoreline waste and reinforce shared care for Dharavandhoo's public spaces.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="home-projects" id="projects">
+  <div class="wrap">
+    <div class="home-projects-panel">
+      <div class="section-head">
+        <span class="section-tag">Our projects</span>
+        <h2>Restoration rooted in place.</h2>
+        <p>Explore Muraka Farm's community-led coral restoration programmes and completed reef projects in Dharavandhoo.</p>
+      </div>
+      <div class="home-project-grid">
+        <a class="home-project-card" href="projects.html#dhirun" aria-label="View the Dhirun flagship restoration programme on the Projects page">
+          <img class="home-project-card-image" src="images/dhirun-reef-frame.png" alt="Tagged Muraka Farm reef frame prepared with coral fragments" loading="lazy" decoding="async">
+          <span class="home-project-card-copy">
+            <span class="home-project-meta">Ongoing · Flagship programme</span>
+            <strong>Dhirun</strong>
+            <span class="home-project-description">Community-based coral restoration combining nurseries, Muraka frames, monitoring, education and local capacity building.</span>
+          </span>
+        </a>
+        <a class="home-project-card" href="projects.html#dharavandhoo-muraka-project" aria-label="View the Dharavandhoo Muraka Project on the Projects page">
+          <img class="home-project-card-image" src="images/dharavandhoo-muraka-project-sign.jpg" alt="Dharavandhoo Muraka Project sign beside the island lagoon" width="1067" height="1600" loading="lazy" decoding="async">
+          <span class="home-project-card-copy">
+            <span class="home-project-meta">Completed · Bank of Maldives</span>
+            <strong>Dharavandhoo Muraka Project</strong>
+            <span class="home-project-description">A Bank Fund-supported coral restoration project created to safeguard marine biodiversity and promote sustainable livelihoods.</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIELD LEARNING -->
+<section class="field-learning" id="field-learning">
+  <div class="wrap">
+    <div class="field-learning-card">
+      <div class="section-head">
+        <span class="section-tag">Field learning</span>
+        <h2>Learning from the reef.</h2>
+        <p>From Maldivian schools to international study programmes, Muraka Farm provides opportunities for students to connect marine science and conservation learning with the living reef environment of Dharavandhoo.</p>
+      </div>
+      <div class="field-learning-examples" aria-label="Muraka Farm field-learning examples">
+        <a class="field-learning-example" href="learn.html#ranum-collaboration" aria-label="View Ranum Efterskole College international coral restoration field-learning programme on the Learn page"><img class="field-learning-example-image" src="images/ranum-group-muraka-project.jpg" alt="Ranum Efterskole College students during field learning with Muraka Farm" width="1280" height="853" loading="lazy" decoding="async"><span class="field-learning-example-copy"><span>01 · International field learning</span><strong>Ranum Efterskole College</strong><span class="field-learning-example-description">International Coral Restoration Field Learning</span></span></a>
+        <a class="field-learning-example" href="learn.html#hiriya-study-camp" aria-label="View Hiriya School Marine Science Study Camp on the Learn page"><img class="field-learning-example-image" src="images/hiriya-study-camp-01.jpg" alt="Hiriya School students during their Marine Science Study Camp" width="1280" height="721" loading="lazy" decoding="async"><span class="field-learning-example-copy"><span>02 · Maldivian field learning</span><strong>Hiriya School</strong><span class="field-learning-example-description">Marine Science Study Camp</span></span></a>
+        <a class="field-learning-example" href="learn.html#coral-quest" aria-label="View Coral Quest Baa Atoll School Girl Guides Study Camp on the Learn page"><img class="field-learning-example-image" src="images/coral-quest-01.png" alt="Baa Atoll School Girl Guides taking part in Coral Quest" width="562" height="802" loading="lazy" decoding="async"><span class="field-learning-example-copy"><span>03 · Youth environmental learning</span><strong>Coral Quest</strong><span class="field-learning-example-description">Baa Atoll School Girl Guides Study Camp</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DHARAVANDHOO -->
+<section class="place" id="place">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Our Home</span>
+      <h2>Dharavandhoo</h2>
+      <p>A small island at the heart of our work.</p>
+    </div>
+    <div class="place-grid">
+      <div class="place-copy">
+        <h3>Our Island. Our Reef. Our Responsibility.</h3>
+        <p>In the heart of the <strong>Baa Atoll UNESCO Biosphere Reserve</strong> lies Dharavandhoo — a small island surrounded by an extraordinary living world of coral reefs, lagoons, and marine life.</p>
+        <p>For Muraka Farm, this isn't simply where we work.</p>
+        <p class="home-statement">This is home.</p>
+        <p>Just beyond our shoreline, we restore and care for coral reefs that have supported island life for generations. These reefs protect our coast, sustain marine life, support local livelihoods, and form part of the natural heritage our community depends on.</p>
+        <p>Our restoration sites are cared for throughout the year, bringing together local hands, scientific knowledge, and a shared commitment to give damaged reefs the opportunity to recover and thrive.</p>
+        <p>And because meaningful conservation should be experienced, not hidden away, we welcome researchers, divers, students, conservationists, and curious visitors to discover the work firsthand.</p>
+        <p class="home-statement">From a small island can come a lasting impact.</p>
+        <ul class="place-facts">
+          <li>🌍 <strong>Baa Atoll UNESCO Biosphere Reserve</strong></li>
+          <li>🪸 <strong>Community-led coral restoration in Dharavandhoo</strong></li>
+          <li>🤝 <strong>Locally cared for and monitored year-round</strong></li>
+          <li>🔬 <strong>Open to researchers, divers and conservation partners by arrangement</strong></li>
+        </ul>
+        <p class="place-closing">Rooted in Dharavandhoo. Restoring reefs for generations to come.</p>
+        <a class="btn place-action" href="dharavandhoo.html">Discover Dharavandhoo — Experiences &amp; Adventures →</a>
+      </div>
+      <div class="place-visuals">
+        <div class="place-visual secondary">
+          <img src="images/dharavandhoo-shoreline.png" alt="Aerial view of Dharavandhoo's beach, lagoon and reef edge" loading="lazy" decoding="async">
+        </div>
+        <div class="place-visual place-visual-video">
+          <iframe src="https://www.youtube.com/embed/TNNUf723ojM?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=TNNUf723ojM&amp;enablejsapi=1&amp;playsinline=1&amp;rel=0" title="Portrait video of Dharavandhoo, home of Muraka Farm" loading="lazy" referrerpolicy="origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS AND SUPPORTERS -->
+<section class="partners" id="partners">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Partners &amp; supporters</span>
+      <h2>Working together for the reef</h2>
+      <p>Our work grows through collaboration across Dharavandhoo, Baa Atoll and the wider conservation community.</p>
+    </div>
+    <div class="partner-grid">
+      <article class="partner-card"><span class="partner-icon" aria-hidden="true">🏝️</span><span>COMMUNITY</span><h3>Island communities</h3></article>
+      <article class="partner-card"><span class="partner-icon" aria-hidden="true">🌊</span><span>CONSERVATION</span><h3>Environmental organisations</h3></article>
+      <article class="partner-card"><span class="partner-icon" aria-hidden="true">🔬</span><span>KNOWLEDGE</span><h3>Researchers and educators</h3></article>
+      <article class="partner-card"><span class="partner-icon" aria-hidden="true">🤝</span><span>SUPPORT</span><h3>Local and private-sector partners</h3></article>
+    </div>
+    <p class="partners-note">Our work grows through collaboration with island communities, conservation organisations, researchers, educators, government institutions, local businesses and private-sector partners.</p>
+    <div class="partner-collaborations">
+      <h3>Partners and collaborators in action</h3>
+      <p>These relationships support Muraka Farm's conservation work through restoration funding, local field support and programme collaboration.</p>
+      <div class="partner-detail-grid">
+        <article class="partner-detail"><div class="partner-detail-logo"><img src="images/partners/bank-of-maldives.png" alt="Bank of Maldives logo" loading="lazy" decoding="async"></div><span class="partner-detail-role">Project funding · Bank Fund 2024</span><h4>Bank of Maldives</h4><p>Muraka Farm was selected through the Bank of Maldives Bank Fund for a coral-restoration project in B. Dharavandhoo focused on safeguarding marine biodiversity and supporting sustainable livelihoods.</p><a href="https://www.bankofmaldives.com.mv/articles/710/bank-of-maldives-selects-winners-of-bank-fund" target="_blank" rel="noopener noreferrer">View the Bank Fund announcement →</a></article>
+        <article class="partner-detail"><div class="partner-detail-logo is-dark"><img src="images/partners/dharavandhoo-council.png" alt="Dharavandhoo Council identity logo" loading="lazy" decoding="async"></div><span class="partner-detail-role">Local and legal support</span><h4>Baa Dharavandhoo Council</h4><p>Baa Dharavandhoo Council supports Muraka Farm through local coordination, community guidance and legal support whenever needed. Its involvement helps conservation activities connect with island priorities, navigate local requirements and move forward with the cooperation needed to create lasting benefits for Dharavandhoo's community and marine environment.</p></article>
+        <article class="partner-detail"><div class="partner-detail-logo"><img src="images/partners/soneva.jpg" alt="Soneva logo" loading="lazy" decoding="async"></div><span class="partner-detail-role">Dhirun conservation collaboration</span><h4>Soneva Conservation &amp; Sustainability Maldives</h4><p>Collaborates with Muraka Farm on Dhirun's conservation and capacity-building approach, supporting the development of community-based coral reef restoration in Dharavandhoo.</p><a href="projects.html#dhirun">View Dhirun →</a></article>
+        <article class="partner-detail"><div class="partner-detail-logo is-dark"><img src="images/partners/liquid-salt-divers.png" alt="Liquid Salt Divers logo" loading="lazy" decoding="async"></div><span class="partner-detail-role">Dhirun · Diving Equipment Support</span><h4>Liquid Salt Divers</h4><p>Liquid Salt Divers supports Muraka Farm's Dhirun programme by providing diving equipment for monitoring sessions, helping our team carry out regular in-water reef monitoring and follow-up work at the restoration site.</p><p>Their support strengthens the practical field capacity needed to monitor coral survival, growth, health and overall restoration progress over time.</p></article>
+        <article class="partner-detail"><div class="partner-detail-logo"><img src="images/partners/baa-atoll-school.png" alt="Baa Atoll School logo" loading="lazy" decoding="async"></div><span class="partner-detail-role">Youth environmental learning</span><h4>Baa Atoll School</h4><p>Collaborates with Muraka Farm through Coral Quest, connecting Girl Guide students with coral reef education, practical restoration activities and guided marine learning.</p><a href="learn.html#coral-quest">View Coral Quest →</a></article>
+      </div>
+    </div>
+    <div class="partner-logos" aria-label="Muraka Farm partners"><!-- Add confirmed partner logos here --></div>
+  </div>
+</section>
+
+<!-- WORK WITH MURAKA GATEWAY -->
+<section class="work-gateway" id="involve">
+  <div class="wrap work-gateway-inner">
+    <div class="work-gateway-copy">
+      <span class="section-tag">Work with Muraka</span>
+      <h2>Bring your skills, ideas or organisation to the reef.</h2>
+      <p>Explore partnerships, research collaboration, field learning and community conservation opportunities with Muraka Farm.</p>
+    </div>
+    <a class="btn" href="work-with-us.html">Explore ways to work with us →</a>
+  </div>
+</section>
+
+<!-- LATEST FROM MURAKA -->
+<section class="latest" id="latest">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Latest from Muraka</span>
+      <h2>Latest from the reef</h2>
+      <p>Follow Muraka Farm for restoration updates, community activities, field learning and reef monitoring from Dharavandhoo.</p>
+    </div>
+    <div class="latest-instagram">
+      <p>See current restoration work, community participation and field updates directly from the Muraka Farm team.</p>
+      <a href="field-updates.html">View all field updates &rarr;</a>
+      <a href="https://www.instagram.com/murakafarm.drv/" target="_blank" rel="noopener noreferrer">Follow @murakafarm.drv on Instagram →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section class="cta-band" id="donate">
+  <div class="wrap">
+    <h2>Every reef frame starts with someone who decided to help.</h2>
+    <p>Your support keeps the nursery running — from rope and rebar to the boat fuel that gets us out to the reef.</p>
+    <a href="#donation-modal" class="btn btn-primary" data-donation-open aria-haspopup="dialog">Donate to Muraka Farm</a>
+    <p class="donation-trust">Donations support Muraka Farm's coral restoration, field operations, reef monitoring and community conservation work.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/muraka-logo.png" alt="Muraka Farm" style="height:28px; width:auto;">
+          Muraka Farm
+        </div>
+        <p class="footer-identity"><strong>Muraka Farm</strong><span class="footer-location">Dharavandhoo, Baa Atoll, Maldives</span>Community-led coral reef restoration, research, education and conservation.</p>
+        <!-- TODO: restore policy links when privacy.html and donation-policy.html are available. -->
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <a class="social-link" href="mailto:murakafarm.mv@gmail.com" aria-label="Email Muraka Farm">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M3 5.5 7.1 8.6V19H5a2 2 0 0 1-2-2V5.5Z"/>
+                <path fill="#34A853" d="M16.9 8.6 21 5.5V17a2 2 0 0 1-2 2h-2.1V8.6Z"/>
+                <path fill="#EA4335" d="M3.7 4.3A2 2 0 0 1 6 4.4l6 4.5 6-4.5a2 2 0 0 1 2.3-.1L12 10.6 3.7 4.3Z"/>
+                <path fill="#FBBC04" d="M3 5.5V17c0 .7.4 1.4 1 1.7V6.25L3 5.5Z"/>
+                <path fill="#C5221F" d="M21 5.5V17c0 .7-.4 1.4-1 1.7V6.25l1-.75Z"/>
+              </svg>
+              <span>murakafarm.mv@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.instagram.com/murakafarm.drv" target="_blank" rel="noopener noreferrer" aria-label="Muraka Farm on Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.5 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://web.facebook.com/murakafarm.mv/" target="_blank" rel="noopener noreferrer" aria-label="Muraka Farm on Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.25c0-1 .28-1.75 1.78-1.75H17V2.38A23 23 0 0 0 14.48 2C12 2 10.3 3.5 10.3 6.3v3.2H7.5V13h2.8v9h3.2Z"/></svg>
+              <span>Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="community-action.html">Community Action</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research &amp; Reports</a></li>
+          <li><a href="learn.html">Learn With Muraka</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="dharavandhoo.html">Dharavandhoo</a></li>
+          <li><a href="field-updates.html">From the Field</a></li>
+          <li><a href="work-with-us.html">Work With Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MURAKA FARM</span>
+      <span>DHARAVANDHOO, BAA ATOLL, MALDIVES</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="research-modal" id="education-modal" hidden>
+  <div class="research-dialog" role="dialog" aria-modal="true" aria-labelledby="education-title" aria-describedby="education-description">
+    <button class="research-close" type="button" aria-label="Close education popup" data-education-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="section-tag">Learn with Muraka</span>
+    <h2 id="education-title">Learn with Muraka</h2>
+    <div data-education-overview>
+      <p class="research-lead">From understanding the reef to helping protect it.</p>
+      <div class="research-intro" id="education-description">
+        <p>Muraka Farm creates hands-on learning opportunities that connect people with coral reefs, marine conservation and community-led restoration.</p>
+        <p>Our programmes combine knowledge with practical experience—helping participants understand how reefs work, the threats they face, how coral restoration is carried out, and how communities can play a role in protecting them.</p>
+      </div>
+      <section class="research-section">
+        <h3>What participants can learn</h3>
+        <div class="research-grid">
+          <article class="research-area"><h4>🪸 Coral Reefs &amp; Marine Life</h4><p>Discover how coral reefs function, why they are important to Maldivian islands, and the marine life that depends on them.</p></article>
+          <article class="research-area"><h4>🌡️ Threats to Our Reefs</h4><p>Understand coral bleaching, climate change and other pressures affecting reef ecosystems—and why recovery can be difficult.</p></article>
+          <article class="research-area"><h4>🔧 Coral Restoration</h4><p>Learn how restoration works, from coral nurseries and restoration structures to coral attachment, outplanting, maintenance and monitoring.</p></article>
+          <article class="research-area"><h4>🌊 Community Conservation</h4><p>Explore how local communities, young people and organisations can contribute to long-term reef protection.</p></article>
+        </div>
+      </section>
+      <section class="research-section">
+        <h3>Learning can go beyond the classroom</h3>
+        <p class="education-practical">Depending on the programme, participants may have opportunities to take part in practical activities alongside the Muraka team.</p>
+        <div class="research-grid">
+          <article class="research-area"><h4>Theory Session</h4><p>Interactive introduction to coral ecology, conservation and restoration.</p></article>
+          <article class="research-area"><h4>Dry-Build Workshop</h4><p>Learn about restoration structures, coral nursery systems and preparation methods through practical demonstrations.</p></article>
+          <article class="research-area"><h4>Field Observation</h4><p>Visit or observe Muraka's restoration work and see how coral nurseries and restoration sites are managed.</p></article>
+          <article class="research-area"><h4>In-Water Learning</h4><p>Where suitable and properly arranged, participants may observe restoration activities in the water.</p></article>
+        </div>
+      </section>
+      <section class="research-section">
+        <h3>Who is it for?</h3>
+        <div class="research-tags"><span class="research-tag">Schools</span><span class="research-tag">Students</span><span class="research-tag">Youth Groups</span><span class="research-tag">Community Organisations</span><span class="research-tag">Resorts</span><span class="research-tag">Visitors</span><span class="research-tag">Conservation Groups</span></div>
+        <p class="research-section-copy">Programmes can be adapted to different ages, group sizes and learning objectives—from introductory reef-awareness sessions to more practical restoration-focused experiences.</p>
+      </section>
+      <section class="education-choices">
+        <h3>How would you like to learn with Muraka?</h3>
+        <p>Choose the programme route that best fits your group or learning objectives.</p>
+        <div class="partnership-options">
+          <button class="partnership-option" type="button" data-education-route="school"><h3>🏫 SCHOOL PROGRAMME</h3><p>Arrange an educational programme for students.</p></button>
+          <button class="partnership-option" type="button" data-education-route="group"><h3>👥 GROUP / ORGANISATION</h3><p>Arrange a conservation learning experience for your group.</p></button>
+          <button class="partnership-option" type="button" data-education-route="visitor"><h3>🏝️ VISITOR EXPERIENCE</h3><p>Learn about Muraka's restoration work while visiting Dharavandhoo.</p></button>
+          <button class="partnership-option" type="button" data-education-route="custom"><h3>🤝 CUSTOM PROGRAMME</h3><p>Talk to us about creating a programme around your objectives.</p></button>
+        </div>
+      </section>
+    </div>
+    <div class="partnership-detail" data-education-detail hidden>
+      <button class="partnership-back" type="button" data-education-back>← Back to learning options</button>
+      <p class="partnership-detail-copy" data-education-detail-copy></p>
+      <div class="partnership-suitable"><strong>Tell us about</strong><span data-education-prompts></span></div>
+      <a class="partnership-detail-cta" href="mailto:murakafarm.mv@gmail.com" data-education-email></a>
+    </div>
+  </div>
+</div>
+
+<div class="research-modal" id="research-modal" hidden>
+  <div class="research-dialog" role="dialog" aria-modal="true" aria-labelledby="research-title" aria-describedby="research-description">
+    <button class="research-close" type="button" aria-label="Close research popup" data-research-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="section-tag">Research with Muraka</span>
+    <h2 id="research-title">Research with Muraka</h2>
+    <p class="research-lead">Study the reef. Contribute to its future.</p>
+    <div class="research-intro" id="research-description">
+      <p>Muraka Farm welcomes collaboration with researchers, universities, students and conservation organisations interested in coral reefs, restoration and community-led marine conservation.</p>
+      <p>Our work in Dharavandhoo provides opportunities to connect field research with active restoration—from coral nurseries and restoration structures to monitoring reef recovery and understanding how communities can contribute to long-term conservation.</p>
+    </div>
+
+    <section class="research-section">
+      <h3>🔬 Research Opportunities</h3>
+      <div class="research-grid">
+        <article class="research-area"><h4>Coral Restoration &amp; Growth</h4><p>Study coral growth, survival, attachment methods and restoration performance.</p></article>
+        <article class="research-area"><h4>Reef Monitoring</h4><p>Observe changes in coral condition, survival, recruitment and the surrounding reef ecosystem.</p></article>
+        <article class="research-area"><h4>Restoration Methods</h4><p>Compare nursery systems, restoration structures, attachment techniques and different approaches to outplanting.</p></article>
+        <article class="research-area"><h4>Community-Led Conservation</h4><p>Explore the role of local participation, education and stewardship in long-term reef restoration.</p></article>
+      </div>
+    </section>
+
+    <section class="research-section">
+      <h3>🌊 What Muraka Can Provide</h3>
+      <p class="research-support-intro">Depending on the project and available capacity, Muraka Farm can explore providing:</p>
+      <ul class="research-support-list">
+        <li>Access to active restoration and nursery sites by arrangement</li>
+        <li>Information about our restoration methods and activities</li>
+        <li>Opportunities to observe monitoring and maintenance activities</li>
+        <li>Local knowledge of Dharavandhoo's reef environment</li>
+        <li>Coordination with the Muraka Farm restoration team</li>
+        <li>Opportunities to develop research alongside ongoing restoration work</li>
+      </ul>
+    </section>
+
+    <section class="research-section">
+      <h3>🎓 Who Can Collaborate?</h3>
+      <div class="research-tags">
+        <span class="research-tag">Universities</span><span class="research-tag">Marine Scientists</span><span class="research-tag">Students</span><span class="research-tag">Research Institutions</span><span class="research-tag">Conservation NGOs</span><span class="research-tag">Independent Researchers</span>
+      </div>
+      <p class="research-section-copy">Whether you're developing a student research project, academic study, monitoring programme or longer-term collaboration, we'd be interested in hearing how your work could contribute to better reef restoration and conservation.</p>
+    </section>
+
+    <section class="research-location">
+      <h3>📍 A Living Restoration Site in Baa Atoll</h3>
+      <strong>Dharavandhoo, Baa Atoll, Maldives</strong>
+      <p>Our restoration activities take place within the wider marine environment of the Baa Atoll UNESCO Biosphere Reserve, creating opportunities to study coral restoration in an ecologically significant Maldivian reef system.</p>
+      <a href="dharavandhoo.html" data-research-location>View our location →</a>
+    </section>
+
+    <div class="research-proposal">
+      <strong>Already have a research proposal?</strong>
+      <span>Send your research proposal or project concept to our team.</span><br>
+      <a href="mailto:murakafarm.mv@gmail.com" data-research-proposal>Email Your Proposal →</a>
+    </div>
+  </div>
+</div>
+
+<div class="partnership-modal" id="partnership-modal" hidden>
+  <div class="partnership-dialog" role="dialog" aria-modal="true" aria-labelledby="partnership-title" aria-describedby="partnership-description">
+    <button class="partnership-close" type="button" aria-label="Close partnership popup" data-partnership-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="section-tag">Partnerships</span>
+    <h2 id="partnership-title">Partner with Muraka Farm</h2>
+    <p class="partnership-lead" data-partnership-overview>Let’s create something meaningful for the reef.</p>
+    <div class="partnership-intro" id="partnership-description" data-partnership-overview>
+      <p>Muraka Farm works with organisations that want to contribute to coral reef restoration, marine conservation, environmental education and community-led action in the Maldives.</p>
+      <p>Whether you're looking to support an existing programme, develop a new conservation project, or bring an idea to life, we'd be happy to explore what's possible together.</p>
+    </div>
+    <div class="partnership-options" data-partnership-overview>
+      <button class="partnership-option" type="button" data-partnership-type="Coral Restoration" aria-pressed="false"><h3>🪸 CORAL RESTORATION</h3><p>Collaborate on coral restoration, nurseries, monitoring and long-term reef recovery projects.</p></button>
+      <button class="partnership-option" type="button" data-partnership-type="Project Partnerships" aria-pressed="false"><h3>🌊 PROJECT PARTNERSHIPS</h3><p>Work with Muraka Farm to develop conservation initiatives for resorts, islands and local communities.</p></button>
+      <button class="partnership-option" type="button" data-partnership-type="Education & Community" aria-pressed="false"><h3>🎓 EDUCATION &amp; COMMUNITY</h3><p>Support environmental education, youth programmes, training and community conservation activities.</p></button>
+      <button class="partnership-option" type="button" data-partnership-type="Sponsorship & Support" aria-pressed="false"><h3>🤝 SPONSORSHIP &amp; SUPPORT</h3><p>Support projects through funding, equipment, transport, technical expertise or other resources.</p></button>
+    </div>
+    <div class="partnership-open" data-partnership-overview>
+      <h3>Have something else in mind?</h3>
+      <p>Every partnership doesn't have to fit into a category. If your organisation has an idea, project or opportunity that aligns with our work, talk to us.</p>
+    </div>
+    <div class="partnership-project" data-partnership-overview>
+      <div><strong>Planning a coral restoration, relocation or marine conservation project?</strong><span>Talk to our team about your site, objectives and conservation needs.</span></div>
+      <a href="mailto:murakafarm.mv@gmail.com" data-project-email>Discuss a Project →</a>
+    </div>
+    <div class="partnership-detail" data-partnership-detail hidden>
+      <button class="partnership-back" type="button" data-partnership-back>← Back to partnership options</button>
+      <p class="partnership-detail-copy" data-partnership-detail-copy></p>
+      <div class="partnership-suitable"><strong data-partnership-suitable-label>Suitable for</strong><span data-partnership-suitable></span></div>
+      <h3 class="partnership-detail-question" data-partnership-question></h3>
+      <a class="partnership-detail-cta" href="mailto:murakafarm.mv@gmail.com" data-partnership-detail-email></a>
+    </div>
+  </div>
+</div>
+
+<div class="donation-modal" id="donation-modal" hidden>
+  <div class="donation-dialog" role="dialog" aria-modal="true" aria-labelledby="donation-title" aria-describedby="donation-description">
+    <button class="donation-close" type="button" aria-label="Close donation popup" data-donation-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="section-tag">Donate</span>
+    <h2 id="donation-title">Support Muraka Farm 🪸</h2>
+    <p class="donation-intro" id="donation-description">Your contribution supports our coral restoration, reef monitoring, environmental education and community conservation work.</p>
+    <form id="donation-form">
+      <h3>Choose your contribution</h3>
+      <div class="donation-amounts" role="group" aria-label="Choose a donation amount">
+        <button class="donation-amount" type="button" data-donation-amount="10" aria-pressed="false">$10</button>
+        <button class="donation-amount" type="button" data-donation-amount="25" aria-pressed="false">$25</button>
+        <button class="donation-amount" type="button" data-donation-amount="50" aria-pressed="false">$50</button>
+        <button class="donation-amount" type="button" data-donation-amount="100" aria-pressed="false">$100</button>
+      </div>
+      <label class="donation-other" for="donation-other">Other amount</label>
+      <div class="donation-other-control"><span class="donation-currency">$</span><input id="donation-other" type="number" min="1" step="1" inputmode="decimal" placeholder="Enter amount" aria-label="Other donation amount in US dollars"></div>
+      <button class="donation-pay" type="submit" disabled>Online payment coming soon</button>
+      <p class="donation-trust">Online payment is being finalised. Please contact Muraka Farm to proceed.</p>
+    </form>
+  </div>
+</div>
+
+<div class="adoption-modal" id="adoption-modal" hidden>
+  <div class="adoption-dialog" role="dialog" aria-modal="true" aria-labelledby="adoption-title" aria-describedby="adoption-description">
+    <button class="adoption-close" type="button" aria-label="Close adoption popup" data-adoption-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="section-tag">Support the reef</span>
+    <h2 id="adoption-title">Adopt a Muraka Frame 🪸</h2>
+    <div class="adoption-price">USD 60 per frame</div>
+    <div class="adoption-summary" id="adoption-description">
+      <p>Your adoption supports preparation of the frame, coral attachment, deployment, maintenance and monitoring.</p>
+      <p>Up to <strong>4 people</strong> can be associated with one adopted frame.</p>
+      <p>Photos and videos of the restoration activity will be provided to the adopter.</p>
+    </div>
+    <div class="adoption-steps">
+      <section class="adoption-step">
+        <span class="adoption-step-label">Step 1</span>
+        <h3>Send us your adoption details</h3>
+        <p>Before making payment, please send us your adoption details so we can identify your payment and prepare your frame.</p>
+        <a class="adoption-step-action" href="mailto:murakafarm.mv@gmail.com" data-adoption-email>Send My Adoption Details →</a>
+      </section>
+      <section class="adoption-step">
+        <span class="adoption-step-label">Step 2</span>
+        <h3>Payment</h3>
+        <p class="adoption-payment-note">Already sent your adoption email?</p>
+        <!-- TODO BEFORE LAUNCH: replace with live PayPal URL (YOUR-PAYPAL-PAYMENT-LINK) -->
+        <span class="adoption-step-action" aria-disabled="true">Online payment is being finalised. Please contact Muraka Farm to proceed.</span>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="volunteer-modal" id="volunteer-modal" hidden>
+  <div class="volunteer-dialog" role="dialog" aria-modal="true" aria-labelledby="volunteer-title" aria-describedby="volunteer-description">
+    <button class="volunteer-close" type="button" aria-label="Close volunteer popup" data-volunteer-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="section-tag">Get involved</span>
+    <h2 id="volunteer-title">Volunteer with Muraka Farm</h2>
+    <p class="volunteer-intro" id="volunteer-description">Interested in joining our coral restoration, community activities, education programmes, or reef monitoring work? Get in touch with us and tell us a little about yourself, your availability, and how you'd like to help.</p>
+    <div class="volunteer-contacts">
+      <a class="volunteer-contact" href="mailto:murakafarm.mv@gmail.com?subject=Volunteer%20with%20Muraka%20Farm&amp;body=Hello%20Muraka%20Farm%2C%0A%0AI%20am%20interested%20in%20volunteering%20with%20Muraka%20Farm.%0A%0AFull%20Name%3A%0A%0ACountry%20%2F%20Island%3A%0A%0AWhatsApp%20%2F%20Phone%3A%0A%0AI%20am%20interested%20in%3A%0A-%20Coral%20restoration%0A-%20Community%20activities%0A-%20Education%20programmes%0A-%20Reef%20monitoring%0A-%20Photography%20%2F%20media%0A-%20Other%3A%0A%0AMy%20availability%3A%0A%0ASnorkeling%20%2F%20diving%20experience%3A%0A-%20None%0A-%20Snorkeling%0A-%20Freediving%0A-%20Scuba%20diving%0A%0AA%20little%20about%20myself%3A%0A%0AThank%20you.">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        <span><strong>Email</strong><span>murakafarm.mv@gmail.com</span></span>
+      </a>
+      <a class="volunteer-contact" href="https://www.instagram.com/murakafarm.drv/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span><strong>Instagram</strong><span>@murakafarm.drv</span></span>
+      </a>
+      <a class="volunteer-contact" href="https://www.facebook.com/murakafarm.mv/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v9h4v-9h3.5l.5-4h-4V9c0-.7.3-1 1-1Z"/></svg>
+        <span><strong>Facebook</strong><span>Muraka Farm</span></span>
+      </a>
+    </div>
+    <p class="volunteer-note">For diving or in-water activities, please mention your snorkeling or diving experience when contacting us.</p>
+  </div>
+</div>
+
+<!-- Mobile navigation -->
+<!-- SCRIPTS -->
+<script>
+(function () {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('primaryNav');
+  if (!toggle || !nav) return;
+
+  function closeMenu() {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation menu');
+  }
+
+  toggle.addEventListener('click', function () {
+    const isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  });
+
+  nav.addEventListener('click', function (event) {
+    if (event.target.closest('a')) closeMenu();
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeMenu();
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu();
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1080) closeMenu();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const modal = document.getElementById('volunteer-modal');
+  const openButton = document.querySelector('[data-volunteer-open]');
+  const closeButton = modal ? modal.querySelector('[data-volunteer-close]') : null;
+  if (!modal || !openButton || !closeButton) return;
+
+  function openModal(event) {
+    event.preventDefault();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+
+  function closeModal() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    openButton.focus();
+  }
+
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const modal = document.getElementById('adoption-modal');
+  const openButton = document.querySelector('[data-adoption-open]');
+  const closeButton = modal ? modal.querySelector('[data-adoption-close]') : null;
+  const emailLink = modal ? modal.querySelector('[data-adoption-email]') : null;
+  if (!modal || !openButton || !closeButton || !emailLink) return;
+
+  const adoptionEmail = [
+    'Hello Muraka Farm,',
+    '',
+    'I would like to adopt a Muraka Frame.',
+    '',
+    'Full Name:',
+    '',
+    'WhatsApp / Phone:',
+    '',
+    'Names to associate with the frame:',
+    '1.',
+    '2.',
+    '3.',
+    '4.',
+    '',
+    'Thank you.'
+  ].join('\n');
+  emailLink.href = 'mailto:murakafarm.mv@gmail.com?subject=' + encodeURIComponent('Muraka Frame Adoption') + '&body=' + encodeURIComponent(adoptionEmail);
+
+  function openModal(event) {
+    event.preventDefault();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+
+  function closeModal() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    openButton.focus();
+  }
+
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const modal = document.getElementById('donation-modal');
+  const openButton = document.querySelector('[data-donation-open]');
+  const closeButton = modal ? modal.querySelector('[data-donation-close]') : null;
+  const form = document.getElementById('donation-form');
+  const amountButtons = modal ? Array.from(modal.querySelectorAll('[data-donation-amount]')) : [];
+  const otherAmount = document.getElementById('donation-other');
+  const payButton = modal ? modal.querySelector('.donation-pay') : null;
+  if (!modal || !openButton || !closeButton || !form || !otherAmount || !payButton) return;
+
+  let selectedAmount = '';
+
+  function clearPresetSelection() {
+    amountButtons.forEach(function (button) {
+      button.classList.remove('is-selected');
+      button.setAttribute('aria-pressed', 'false');
+    });
+  }
+
+  function updatePayButton() {
+    payButton.disabled = true;
+  }
+
+  function openModal(event) {
+    event.preventDefault();
+    selectedAmount = '';
+    otherAmount.value = '';
+    clearPresetSelection();
+    updatePayButton();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+
+  function closeModal() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    openButton.focus();
+  }
+
+  amountButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      clearPresetSelection();
+      button.classList.add('is-selected');
+      button.setAttribute('aria-pressed', 'true');
+      selectedAmount = button.dataset.donationAmount;
+      otherAmount.value = selectedAmount;
+      updatePayButton();
+    });
+  });
+
+  otherAmount.addEventListener('input', function () {
+    clearPresetSelection();
+    selectedAmount = Number(otherAmount.value) > 0 ? otherAmount.value : '';
+    updatePayButton();
+  });
+
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    // TODO BEFORE LAUNCH: replace with live PayPal URL (YOUR-PAYPAL-DONATION-LINK)
+    return;
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const modal = document.getElementById('partnership-modal');
+  const openButton = document.querySelector('[data-partnership-open]');
+  const closeButton = modal ? modal.querySelector('[data-partnership-close]') : null;
+  const projectLink = modal ? modal.querySelector('[data-project-email]') : null;
+  const typeButtons = modal ? Array.from(modal.querySelectorAll('[data-partnership-type]')) : [];
+  const overviewItems = modal ? Array.from(modal.querySelectorAll('[data-partnership-overview]')) : [];
+  const detail = modal ? modal.querySelector('[data-partnership-detail]') : null;
+  const backButton = modal ? modal.querySelector('[data-partnership-back]') : null;
+  const detailCopy = modal ? modal.querySelector('[data-partnership-detail-copy]') : null;
+  const suitableLabel = modal ? modal.querySelector('[data-partnership-suitable-label]') : null;
+  const suitable = modal ? modal.querySelector('[data-partnership-suitable]') : null;
+  const question = modal ? modal.querySelector('[data-partnership-question]') : null;
+  const detailEmail = modal ? modal.querySelector('[data-partnership-detail-email]') : null;
+  const title = document.getElementById('partnership-title');
+  if (!modal || !openButton || !closeButton || !projectLink || !typeButtons.length || !overviewItems.length || !detail || !backButton || !detailCopy || !suitableLabel || !suitable || !question || !detailEmail || !title) return;
+
+  const partnershipRoutes = {
+    'Coral Restoration': {
+      title: 'Coral Restoration Partnerships',
+      copy: 'Work with Muraka Farm on coral nurseries, restoration structures, coral propagation, outplanting, maintenance and long-term monitoring.',
+      label: 'Suitable for',
+      suitable: 'Resorts · Islands · NGOs · Conservation programmes',
+      question: 'Have a restoration project in mind?',
+      cta: 'Discuss a Restoration Project →',
+      subject: 'Coral Restoration Partnership Enquiry',
+      prompts: ['Organisation:', 'Island / site:', 'Project requirements:', 'Timeline:', 'Brief description:']
+    },
+    'Project Partnerships': {
+      title: 'Develop a Project With Us',
+      copy: 'Have an environmental or marine conservation idea? Muraka Farm can explore opportunities to develop projects together—from initial concepts and field activities to community participation and long-term implementation.',
+      label: 'Suitable for',
+      suitable: 'Resorts · Businesses · NGOs · Councils · Conservation organisations',
+      question: 'Ready to develop an idea together?',
+      cta: 'Propose a Project →',
+      subject: 'Project Partnership Proposal',
+      prompts: ['Organisation:', 'Project idea:', 'Location:', 'Potential partners:', 'Brief description:']
+    },
+    'Education & Community': {
+      title: 'Education & Community Partnerships',
+      copy: 'Collaborate with Muraka Farm on school programmes, environmental awareness, practical conservation sessions, youth engagement and community activities.',
+      label: 'Suitable for',
+      suitable: 'Schools · Councils · NGOs · Resorts · Community organisations',
+      question: 'Would you like to arrange a programme?',
+      cta: 'Plan an Education or Community Programme →',
+      subject: 'Education & Community Partnership Enquiry',
+      prompts: ['Organisation / school:', 'Participant group and age range:', 'Preferred activity:', 'Preferred dates:', 'Brief description:']
+    },
+    'Sponsorship & Support': {
+      title: 'Support Conservation in Action',
+      copy: "Organisations can support Muraka Farm's work through project funding, equipment, transportation, field logistics, technical expertise and other forms of in-kind support.",
+      label: 'Ways to support',
+      suitable: 'Funding · Equipment · Transport · Technical Support · Materials',
+      question: 'Interested in supporting our work?',
+      cta: 'Become a Supporting Partner →',
+      subject: 'Sponsorship & Support Enquiry',
+      prompts: ['Organisation:', 'Type of support you would like to provide:', 'Available resources or expertise:', 'Preferred timeframe:', 'Brief description:']
+    }
+  };
+
+  const projectBody = [
+    'Hello Muraka Farm,',
+    '',
+    'We would like to discuss coral restoration services for a project.',
+    '',
+    'Organisation:',
+    'Project location:',
+    'Project type:',
+    'Brief description:'
+  ].join('\n');
+
+  projectLink.href = 'mailto:murakafarm.mv@gmail.com?subject=' + encodeURIComponent('Coral Restoration Project Enquiry — Muraka Farm') + '&body=' + encodeURIComponent(projectBody);
+
+  function emailHref(route) {
+    const body = [
+      'Hello Muraka Farm,',
+      '',
+      'We are interested in exploring this partnership opportunity with Muraka Farm.',
+      '',
+      ...route.prompts
+    ].join('\n');
+    return 'mailto:murakafarm.mv@gmail.com?subject=' + encodeURIComponent(route.subject) + '&body=' + encodeURIComponent(body);
+  }
+
+  function showOverview() {
+    title.textContent = 'Partner with Muraka Farm';
+    overviewItems.forEach(function (item) {
+      item.hidden = false;
+    });
+    detail.hidden = true;
+  }
+
+  function openModal(event) {
+    event.preventDefault();
+    showOverview();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+
+  function closeModal() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    openButton.focus();
+  }
+
+  typeButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const route = partnershipRoutes[button.dataset.partnershipType];
+      if (!route) return;
+      overviewItems.forEach(function (item) {
+        item.hidden = true;
+      });
+      title.textContent = route.title;
+      detailCopy.textContent = route.copy;
+      suitableLabel.textContent = route.label;
+      suitable.textContent = route.suitable;
+      question.textContent = route.question;
+      detailEmail.textContent = route.cta;
+      detailEmail.href = emailHref(route);
+      detail.hidden = false;
+      backButton.focus();
+    });
+  });
+
+  backButton.addEventListener('click', function () {
+    showOverview();
+    typeButtons[0].focus();
+  });
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const modal = document.getElementById('research-modal');
+  const openButton = document.querySelector('[data-research-open]');
+  const closeButton = modal ? modal.querySelector('[data-research-close]') : null;
+  const locationLink = modal ? modal.querySelector('[data-research-location]') : null;
+  const proposalLink = modal ? modal.querySelector('[data-research-proposal]') : null;
+  if (!modal || !openButton || !closeButton || !locationLink || !proposalLink) return;
+
+  const proposalBody = [
+    'Hello Muraka Farm,',
+    '',
+    'I would like to share a research proposal or project concept for your consideration.',
+    '',
+    'Name:',
+    'University / Organisation:',
+    'Research area:',
+    'Proposed timeframe:'
+  ].join('\n');
+  proposalLink.href = 'mailto:murakafarm.mv@gmail.com?subject=' + encodeURIComponent('Research Proposal — Muraka Farm') + '&body=' + encodeURIComponent(proposalBody);
+
+  function openModal(event) {
+    event.preventDefault();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+
+  function closeModal(returnFocus) {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    if (returnFocus !== false) openButton.focus();
+  }
+
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', function () { closeModal(); });
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+  locationLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    closeModal(false);
+    document.getElementById('place').scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start'
+    });
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const modal = document.getElementById('education-modal');
+  const openButton = document.querySelector('[data-education-open]');
+  const closeButton = modal ? modal.querySelector('[data-education-close]') : null;
+  const overview = modal ? modal.querySelector('[data-education-overview]') : null;
+  const detail = modal ? modal.querySelector('[data-education-detail]') : null;
+  const backButton = modal ? modal.querySelector('[data-education-back]') : null;
+  const routeButtons = modal ? Array.from(modal.querySelectorAll('[data-education-route]')) : [];
+  const title = document.getElementById('education-title');
+  const detailCopy = modal ? modal.querySelector('[data-education-detail-copy]') : null;
+  const prompts = modal ? modal.querySelector('[data-education-prompts]') : null;
+  const email = modal ? modal.querySelector('[data-education-email]') : null;
+  if (!modal || !openButton || !closeButton || !overview || !detail || !backButton || !routeButtons.length || !title || !detailCopy || !prompts || !email) return;
+
+  const routes = {
+    school: {
+      title: 'Arrange a School Programme',
+      copy: 'Create an engaging reef-learning programme for students through theory sessions, practical demonstrations and activities suited to the group.',
+      prompts: 'School · approximate number and age of students · preferred dates · learning objectives',
+      cta: 'Send a School Enquiry →',
+      subject: 'School Programme Enquiry — Muraka Farm',
+      questions: ['School:', 'Number of students:', 'Age range:', 'Preferred dates:', "What you'd like students to learn:"]
+    },
+    group: {
+      title: 'Arrange a Group Learning Experience',
+      copy: 'Plan a conservation learning experience for your organisation, resort, youth group or community group.',
+      prompts: 'Organisation · group size · participant profile · preferred dates · programme goals',
+      cta: 'Send a Group Enquiry →',
+      subject: 'Group Learning Programme Enquiry — Muraka Farm',
+      questions: ['Organisation / group:', 'Group size:', 'Participant profile:', 'Preferred dates:', 'Learning objectives:']
+    },
+    visitor: {
+      title: 'Plan a Visitor Learning Experience',
+      copy: "Learn about Muraka Farm's restoration work during a visit to Dharavandhoo through an experience arranged around your interests and suitability.",
+      prompts: 'Visitor numbers · travel dates · interests · relevant swimming, snorkeling or diving experience',
+      cta: 'Send a Visitor Enquiry →',
+      subject: 'Visitor Learning Experience Enquiry — Muraka Farm',
+      questions: ['Number of visitors:', 'Travel dates:', 'Areas of interest:', 'Swimming / snorkeling / diving experience:', 'Additional information:']
+    },
+    custom: {
+      title: 'Create a Custom Programme',
+      copy: 'Work with Muraka Farm to shape an education or conservation programme around your audience, objectives and available timeframe.',
+      prompts: 'Organisation · intended audience · objectives · preferred activities · timeframe',
+      cta: 'Discuss a Custom Programme →',
+      subject: 'Custom Education Programme Enquiry — Muraka Farm',
+      questions: ['Organisation:', 'Intended audience:', 'Programme objectives:', 'Preferred activities:', 'Timeframe:', 'Brief description:']
+    }
+  };
+
+  function emailHref(route) {
+    const body = ['Hello Muraka Farm,', '', 'We are interested in arranging a learning programme.', '', ...route.questions].join('\n');
+    return 'mailto:murakafarm.mv@gmail.com?subject=' + encodeURIComponent(route.subject) + '&body=' + encodeURIComponent(body);
+  }
+
+  function showOverview() {
+    title.textContent = 'Learn with Muraka';
+    overview.hidden = false;
+    detail.hidden = true;
+  }
+
+  function openModal(event) {
+    event.preventDefault();
+    showOverview();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+
+  function closeModal() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    openButton.focus();
+  }
+
+  routeButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const route = routes[button.dataset.educationRoute];
+      if (!route) return;
+      overview.hidden = true;
+      title.textContent = route.title;
+      detailCopy.textContent = route.copy;
+      prompts.textContent = route.prompts;
+      email.textContent = route.cta;
+      email.href = emailHref(route);
+      detail.hidden = false;
+      backButton.focus();
+    });
+  });
+  backButton.addEventListener('click', function () {
+    showOverview();
+    routeButtons[1].focus();
+  });
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+})();
+</script>
+
+<script>
+/* ============================================================
+   MOTION & INTERACTION SYSTEM
+   ============================================================ */
+(function () {
+  const root = document.documentElement;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function revealGroup(selector, type, step, start) {
+    document.querySelectorAll(selector).forEach(function (element, index) {
+      element.classList.add('reveal', type || 'reveal-up');
+      element.style.setProperty('--reveal-delay', String((start || 0) + index * (step || 0)) + 'ms');
+    });
+  }
+
+  function initScrollReveals() {
+    document.querySelectorAll('body > section .section-head').forEach(function (head) {
+      const tag = head.querySelector('.section-tag');
+      const heading = head.querySelector('h2');
+      const intro = head.querySelector('p');
+      if (tag) { tag.classList.add('reveal','reveal-up'); tag.style.setProperty('--reveal-delay','0ms'); }
+      if (heading) { heading.classList.add('reveal','reveal-up'); heading.style.setProperty('--reveal-delay','80ms'); }
+      if (intro) { intro.classList.add('reveal','reveal-up'); intro.style.setProperty('--reveal-delay','160ms'); }
+    });
+
+    revealGroup('#about .about-intro','reveal-up',0,140);
+    revealGroup('#about .about-card','reveal-up',80,100);
+    revealGroup('#why .why-grid > div:first-child','reveal-left',0,0);
+    revealGroup('#why .heat-panel','reveal-right',0,80);
+    revealGroup('#why .reef-impact','reveal-up',70,120);
+    revealGroup('#why .evidence-callout','reveal-scale',0,240);
+    revealGroup('#process .process-item','reveal-up',90,0);
+    revealGroup('#achievements .achievement-card','reveal-scale',80,0);
+    revealGroup('#recognition .recognition-copy > *','reveal-up',70,0);
+    revealGroup('#recognition .recognition-story','reveal-scale',0,100);
+    revealGroup('#recognition .recognition-action','reveal-up',0,180);
+    revealGroup('#dhirun .dhirun-visual','reveal-left',0,0);
+    revealGroup('#dhirun .dhirun-copy > .section-tag, #dhirun .dhirun-copy > .dhirun-name, #dhirun .dhirun-copy > h3, #dhirun .dhirun-copy > p','reveal-up',70,0);
+    revealGroup('#dhirun .dhirun-collaboration > .dhirun-collaboration-label, #dhirun .dhirun-collaboration > h3, #dhirun .dhirun-collaboration > .dhirun-collaboration-intro','reveal-up',70,40);
+    revealGroup('#dhirun .dhirun-collaborator-card','reveal-up',90,100);
+    revealGroup('#dhirun .dhirun-community-note','reveal-up',0,220);
+revealGroup('#dhirun .dhirun-pillar','reveal-up',70,100);
+revealGroup('#dharavandhoo-muraka-project .bml-project-card > *','reveal-up',90,40);
+revealGroup('#field-learning .field-learning-example','reveal-up',90,80);
+    revealGroup('#ranum-collaboration .ranum-collage-item','reveal-scale',100,0);
+    revealGroup('#ranum-collaboration .ranum-copy','reveal-up',0,100);
+    revealGroup('#ranum-collaboration .ranum-details','reveal-up',0,180);
+    revealGroup('#hiriya-study-camp .hiriya-copy','reveal-left',0,0);
+    revealGroup('#hiriya-study-camp .hiriya-photo','reveal-scale',90,120);
+    revealGroup('#hiriya-study-camp .hiriya-details','reveal-up',0,180);
+    revealGroup('#coral-quest .coral-quest-header','reveal-left',0,0);
+    revealGroup('#coral-quest .coral-quest-details','reveal-right',0,80);
+    revealGroup('#coral-quest .coral-quest-callout','reveal-up',100,100);
+    revealGroup('#coral-quest .coral-quest-closing','reveal-up',0,180);
+    revealGroup('#place .place-visuals','reveal-left',0,0);
+    revealGroup('#place .place-copy','reveal-right',0,80);
+    revealGroup('#partners .partner-card','reveal-up',70,80);
+    revealGroup('#partners .partner-collaborations > h3, #partners .partner-collaborations > p','reveal-up',80,80);
+    revealGroup('#partners .partner-detail','reveal-up',90,140);
+    revealGroup('#involve .work-gateway-copy, #involve .btn','reveal-up',100,60);
+    revealGroup('#latest .latest-instagram','reveal-scale',0,100);
+    revealGroup('#donate h2, #donate > .wrap > p, #donate .btn','reveal-up',90,0);
+
+    const reveals = document.querySelectorAll('.reveal');
+    root.classList.add('motion-ready');
+
+    if (reduceMotion.matches || !('IntersectionObserver' in window)) {
+      reveals.forEach(function (element) { element.classList.add('is-visible'); });
+      return;
+    }
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold:0.14, rootMargin:'0px 0px -8% 0px' });
+
+    reveals.forEach(function (element) { observer.observe(element); });
+  }
+
+  function initHeroMotion() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+    const sequence = [
+      [hero.querySelector('.eyebrow'),100],
+      [hero.querySelector('h1'),220],
+      [hero.querySelector('.hero-sub'),360],
+      [hero.querySelector('.hero-actions'),480]
+    ];
+    hero.querySelectorAll('.hero-stats > div').forEach(function (stat, index) {
+      sequence.push([stat,620 + index * 80]);
+    });
+    sequence.forEach(function (item) {
+      if (!item[0]) return;
+      item[0].classList.add('hero-reveal');
+      item[0].style.setProperty('--hero-delay',item[1] + 'ms');
+    });
+    requestAnimationFrame(function () {
+      sequence.forEach(function (item) { if (item[0]) item[0].classList.add('is-visible'); });
+    });
+  }
+
+  function initHeaderScrollState() {
+    const header = document.querySelector('header');
+    const heroMark = document.querySelector('.hero-mark');
+    let scheduled = false;
+    function update() {
+      const scrollY = window.scrollY || window.pageYOffset;
+      if (header) header.classList.toggle('scrolled',scrollY > 40);
+      if (heroMark && !reduceMotion.matches && window.innerWidth >= 768) {
+        heroMark.style.transform = 'translate3d(0,' + Math.min(scrollY * 0.035,14) + 'px,0)';
+      } else if (heroMark) {
+        heroMark.style.transform = '';
+      }
+      scheduled = false;
+    }
+    function requestUpdate() {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(update);
+    }
+    update();
+    window.addEventListener('scroll',requestUpdate,{passive:true});
+    window.addEventListener('resize',requestUpdate,{passive:true});
+    if (typeof reduceMotion.addEventListener === 'function') {
+      reduceMotion.addEventListener('change',requestUpdate);
+    } else if (typeof reduceMotion.addListener === 'function') {
+      reduceMotion.addListener(requestUpdate);
+    }
+  }
+
+  initHeroMotion();
+  initScrollReveals();
+  initHeaderScrollState();
+})();
+</script>
+
+<script src="js/video-visibility.js"></script>
+</body>
+</html>

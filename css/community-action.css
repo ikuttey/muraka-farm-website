@@ -1,0 +1,43 @@
+.community-hero{display:flex;min-height:640px;align-items:center;padding:116px 0 96px;border:0;background:linear-gradient(90deg,rgba(7,29,46,.9) 0%,rgba(7,29,46,.72) 52%,rgba(7,29,46,.48) 100%),url("../images/community-action-hero.jpg") center 57% / cover no-repeat,var(--navy);color:var(--paper)}
+.community-hero::after{display:none}
+.community-hero .tag{color:var(--bright)}
+.community-hero h1{max-width:18ch;color:var(--paper);text-shadow:0 2px 16px rgba(3,18,29,.6)}
+.community-hero p{max-width:64ch;color:rgba(242,248,252,.9);text-shadow:0 1px 10px rgba(3,18,29,.68)}
+.events-section{background:var(--paper)}
+.events-grid{display:grid;gap:24px}
+.event-card{overflow:hidden;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:7px;background:#e1eef5}
+.event-gallery{display:grid;align-items:center;gap:6px;padding:8px;background:rgba(20,50,74,.06)}
+.event-gallery-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.event-gallery-four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.event-gallery img{display:block;width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:4px}
+.event-media-collage{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px;padding:10px}
+.event-media-collage>img{justify-self:center;width:min(86%,440px);height:auto;max-height:none;object-fit:contain;background:var(--navy)}
+.event-media-collage>img:last-of-type{grid-column:1/-1;width:min(86%,760px)}
+.event-youtube-tile{justify-self:center;width:100%;min-width:0;margin:0;overflow:hidden;border:1px solid var(--line);border-radius:5px;background:var(--paper)}
+.event-youtube-tile:last-child{grid-column:1/-1;width:min(100%,calc((100% - 10px)/2))}
+.event-youtube-frame-wrap{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#0a1f2f}
+.event-youtube-frame-wrap iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
+.event-youtube-tile figcaption{padding:10px 12px;background:var(--paper);font:500 .72rem/1.4 "IBM Plex Mono",monospace}
+.event-youtube-tile a{color:var(--deep);text-decoration:none;overflow-wrap:anywhere}
+.event-youtube-tile a:hover,.event-youtube-tile a:focus-visible{color:var(--navy);text-decoration:underline}
+.event-video-area{grid-column:1/-1;width:100%;min-width:0;margin-top:12px;padding:20px 12px 12px;border-top:1px solid var(--line);overflow:hidden}
+.event-video-heading{margin-bottom:14px;color:var(--navy);font-size:1.15rem;text-align:center}
+.event-youtube-shorts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;gap:14px;width:100%;margin-bottom:18px}
+.event-youtube-short{min-width:0;margin:0;overflow:hidden;border:1px solid var(--line);border-radius:5px;background:var(--paper)}
+.event-youtube-short-frame{position:relative;width:100%;aspect-ratio:9/16;overflow:hidden;background:#0a1f2f}
+.event-youtube-short-frame iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
+.event-youtube-short figcaption{padding:10px 12px;background:var(--paper);font:500 .72rem/1.4 "IBM Plex Mono",monospace}
+.event-youtube-short a{color:var(--deep);text-decoration:none;overflow-wrap:anywhere}
+.event-youtube-short a:hover,.event-youtube-short a:focus-visible{color:var(--navy);text-decoration:underline}
+.instagram-embed-shell{width:100%;max-width:540px;margin:0 auto;overflow:hidden;border:1px solid var(--line);border-radius:6px;background:#fff}
+.instagram-embed-frame{display:block;width:100%;max-width:100%;height:clamp(620px,75vw,780px);border:0;background:#fff}
+.event-video-fallback{display:block;width:fit-content;max-width:100%;margin:13px auto 0;color:var(--deep);font-size:.86rem;font-weight:600;text-align:center;text-decoration:none;overflow-wrap:anywhere}
+.event-video-fallback:hover,.event-video-fallback:focus-visible{color:var(--navy);text-decoration:underline}
+.event-content{padding:28px}
+.event-content .meta{display:block;margin-bottom:11px;color:var(--deep);font:500 .68rem "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase}
+.event-content h2{font-size:clamp(1.45rem,3vw,2.15rem)}
+.event-content p{max-width:76ch;margin-top:13px;color:var(--soft)}
+@media(max-width:900px){.event-media-collage{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:768px){.event-gallery-three,.event-gallery-four{grid-template-columns:1fr}.event-gallery{padding:6px}.event-gallery img{max-height:none}.event-video-area{padding:18px 6px 10px}.instagram-embed-frame{height:clamp(620px,155vw,760px)}.event-content{padding:22px 20px}}
+@media(max-width:600px){.event-media-collage{grid-template-columns:1fr;gap:8px}.event-media-collage>img,.event-media-collage>img:last-of-type{grid-column:auto;width:min(92%,440px)}.event-youtube-tile:last-child{grid-column:auto;width:100%}.event-youtube-shorts-grid{grid-template-columns:minmax(0,420px);gap:10px}}
+@media(max-width:600px){.community-hero{min-height:600px;padding:90px 20px 70px;background:linear-gradient(rgba(7,29,46,.7),rgba(7,29,46,.78)),url("../images/community-action-hero.jpg") center center / cover no-repeat,var(--navy)}}
