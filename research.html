@@ -81,12 +81,13 @@
   .report-filter{min-height:42px;padding:9px 13px;border:1px solid rgba(44,109,158,.3);border-radius:3px;background:var(--paper);color:var(--blue-deep);font:500 .68rem 'IBM Plex Mono',monospace;letter-spacing:.04em;cursor:pointer;}
   .report-filter[aria-pressed="true"]{border-color:var(--blue-deep);background:var(--blue-deep);color:var(--paper);}
   .report-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
-  .report-card{padding:24px;border:1px solid var(--line);border-radius:6px;background:var(--paper);}
+  .report-card{padding:24px;border:1px solid var(--line);border-radius:6px;background:var(--paper);display:flex;flex-direction:column;}
   .report-card[hidden]{display:none;}
+  .report-cover{display:block;width:100%;aspect-ratio:4 / 5;object-fit:cover;margin-bottom:16px;border:1px solid var(--line);border-radius:5px;background:#E1EEF5;}
   .report-category{color:var(--blue-deep);font:500 .68rem 'IBM Plex Mono',monospace;text-transform:uppercase;}
   .report-card h3{margin-top:10px;font-size:1.16rem;}
   .report-meta,.report-summary{margin-top:10px;color:var(--navy-soft);font-size:.84rem;}
-  .report-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;}
+  .report-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:auto;padding-top:18px;}
   .report-actions a{color:var(--blue-deep);font-size:.82rem;font-weight:600;text-decoration:none;}
   .report-empty{padding:40px;border:1px dashed rgba(44,109,158,.36);border-radius:6px;background:var(--paper);text-align:center;}
   .report-empty strong{display:block;color:var(--blue-deep);font:600 .76rem 'IBM Plex Mono',monospace;letter-spacing:.07em;text-transform:uppercase;}
@@ -199,13 +200,25 @@
       <div class="report-filters" role="group" aria-label="Filter reports by category">
         <button class="report-filter" type="button" data-filter="all" aria-pressed="true">All</button><button class="report-filter" type="button" data-filter="restoration" aria-pressed="false">Restoration</button><button class="report-filter" type="button" data-filter="monitoring" aria-pressed="false">Monitoring</button><button class="report-filter" type="button" data-filter="site-assessments" aria-pressed="false">Site Assessments</button><button class="report-filter" type="button" data-filter="coral-relocation" aria-pressed="false">Coral Relocation</button><button class="report-filter" type="button" data-filter="research" aria-pressed="false">Research</button><button class="report-filter" type="button" data-filter="education" aria-pressed="false">Education</button>
       </div>
-      <div class="report-grid" id="report-grid" aria-live="polite"></div>
+            <div class="report-grid" id="report-grid" aria-live="polite">
+        <article class="report-card" data-report-card data-report-category="site-assessments" data-report-year="2026">
+          <img class="report-cover" src="images/reports/dharavandhoo-reef-impact-august-2026-cover.jpg" alt="Cover image for the Muraka Farm report After the Weather — Dharavandhoo Reef Impact Observation.">
+          <span class="report-category">Site Assessment</span>
+          <h3>After the Weather — Dharavandhoo Reef Impact Observation</h3>
+          <p class="report-meta">Dharavandhoo, Baa Atoll · August 2026</p>
+          <p class="report-summary">Preliminary documentation of visible coral breakage following adverse southwest monsoon conditions in Dharavandhoo. The report combines field photographs with weather and tide information and establishes a baseline for follow-up monitoring.</p>
+          <div class="report-actions">
+            <a href="reports/muraka-farm-dharavandhoo-reef-impact-report-august-2026.pdf" target="_blank" rel="noopener">View report →</a>
+            <a href="reports/muraka-farm-dharavandhoo-reef-impact-report-august-2026.pdf" download>Download PDF</a>
+          </div>
+        </article>
+      </div>
       <!-- Future report-card template:
       <article class="report-card" data-report-card data-report-category="monitoring" data-report-year="YYYY">
-        <span class="report-category">Category</span><h3>Verified report title</h3><p class="report-meta">Location · Year</p><p class="report-summary">Verified summary.</p><div class="report-actions"><a href="verified-report-page">View report →</a><a href="reports/verified-file.pdf" download>Download PDF</a></div>
+        <img class="report-cover" src="images/reports/verified-cover.jpg" alt="Cover image for the report."><span class="report-category">Category</span><h3>Verified report title</h3><p class="report-meta">Location · Year</p><p class="report-summary">Verified summary.</p><div class="report-actions"><a href="verified-report-page">View report →</a><a href="reports/verified-file.pdf" download>Download PDF</a></div>
       </article>
       -->
-      <div class="report-empty" id="report-empty"><strong>Report library in development</strong><p>Muraka Farm's monitoring reports and technical documentation will be published here as they become available.</p><p>For research enquiries or requests for existing project information, contact <a href="mailto:murakafarm.mv@gmail.com">murakafarm.mv@gmail.com</a>.</p><a href="work-with-us.html#research-collaboration">Research with Muraka →</a></div>
+      <div class="report-empty" id="report-empty" hidden><strong>Report library in development</strong><p>Muraka Farm's monitoring reports and technical documentation will be published here as they become available.</p><p>For research enquiries or requests for existing project information, contact <a href="mailto:murakafarm.mv@gmail.com">murakafarm.mv@gmail.com</a>.</p><a href="work-with-us.html#research-collaboration">Research with Muraka →</a></div>
     </div>
   </section>
 
