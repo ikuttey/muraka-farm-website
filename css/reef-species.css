@@ -1,0 +1,110 @@
+:root{
+  --reef-ink:#0b1f26;
+  --reef-muted:#54707a;
+  --reef-line:#dce8e7;
+  --reef-sand:#f5f2e9;
+  --reef-mist:#eef7f5;
+  --reef-sea:#0d6e73;
+  --reef-deep:#083c45;
+  --reef-white:#fff;
+}
+
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.species-hero{
+  min-height:72vh;
+  display:flex;
+  align-items:flex-end;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  background:
+    linear-gradient(180deg,rgba(2,25,31,.12),rgba(2,25,31,.8)),
+    url('../images/turtle-reef.jpg') center 46%/cover no-repeat;
+}
+.species-hero:after{content:"";position:absolute;inset:auto 0 0;height:1px;background:rgba(255,255,255,.22)}
+.species-hero-inner{position:relative;z-index:1;padding-top:140px;padding-bottom:82px;max-width:920px}
+.species-hero .tag{color:#d9fffa;border-color:rgba(255,255,255,.35)}
+.species-hero h1{font-size:clamp(3.5rem,8vw,7.6rem);line-height:.9;max-width:780px;margin:18px 0 24px;letter-spacing:-.055em;color:#fff}
+.species-hero p{font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.65;max-width:760px;color:rgba(255,255,255,.9)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-actions .secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.5);color:#fff;backdrop-filter:blur(8px)}
+
+.species-intro{padding:100px 0;background:var(--reef-sand)}
+.species-intro-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:70px;align-items:start}
+.species-intro h2,.species-heading h2,.reef-ethics h2,.species-contribute h2{font-size:clamp(2.3rem,5vw,4.5rem);line-height:1;letter-spacing:-.045em;margin:14px 0 24px;color:var(--reef-ink)}
+.species-intro p{font-size:1.03rem;line-height:1.8;color:#415b63;max-width:760px}
+.verification-panel{display:flex;gap:16px;border-top:1px solid #b9ceca;border-bottom:1px solid #b9ceca;padding:26px 0;color:var(--reef-ink)}
+.verification-panel p{font-size:.92rem;line-height:1.6;margin:6px 0 0}
+.verification-dot{width:11px;height:11px;border-radius:50%;background:#1f8b69;box-shadow:0 0 0 5px rgba(31,139,105,.12);margin-top:6px;flex:0 0 auto}
+
+.species-directory{padding:105px 0 120px;background:#fff}
+.species-heading{max-width:800px;margin-bottom:42px}
+.species-heading p{color:var(--reef-muted);font-size:1rem;line-height:1.7}
+.species-tools{display:grid;gap:18px;margin-bottom:18px}
+.species-search{position:relative;display:flex;align-items:center;border:1px solid var(--reef-line);background:#fff;max-width:760px}
+.species-search svg{position:absolute;left:18px;width:21px;height:21px;fill:none;stroke:#617a82;stroke-width:1.8}
+.species-search input{width:100%;border:0;outline:0;background:transparent;padding:17px 18px 17px 52px;font:500 .96rem/1.2 Inter,sans-serif;color:var(--reef-ink)}
+.species-search:focus-within{border-color:#8dbbb5;box-shadow:0 0 0 3px rgba(13,110,115,.08)}
+.species-filters{display:flex;flex-wrap:wrap;gap:8px}
+.filter-button{appearance:none;border:1px solid #cfe0de;background:#fff;color:#49646c;padding:10px 15px;border-radius:999px;font:600 .82rem/1 Inter,sans-serif;cursor:pointer;transition:.2s ease}
+.filter-button:hover{border-color:#7ca9a4;color:var(--reef-deep)}
+.filter-button.active{background:var(--reef-deep);border-color:var(--reef-deep);color:#fff}
+.species-summary{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;color:#70868b;margin:26px 0 20px}
+
+.species-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.species-card{border:1px solid var(--reef-line);background:#fff;display:flex;flex-direction:column;min-width:0;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.species-card:hover{transform:translateY(-4px);border-color:#bdd2cf;box-shadow:0 18px 48px rgba(14,57,63,.09)}
+.species-card[hidden]{display:none!important}
+.species-image{position:relative;aspect-ratio:4/3;overflow:hidden;background:#dcece8}
+.species-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease}
+.species-card:hover .species-image img{transform:scale(1.025)}
+.placeholder-image{display:flex;align-items:center;justify-content:center;text-align:center;background:
+  radial-gradient(circle at 75% 25%,rgba(255,255,255,.55),transparent 22%),
+  linear-gradient(145deg,#d8ebe7,#b9d6d2);color:#52716e;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;line-height:1.55}
+.record-status{position:absolute;left:12px;bottom:12px;background:rgba(6,42,48,.87);color:#fff;padding:8px 10px;font:600 .64rem/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;backdrop-filter:blur(7px)}
+.species-body{padding:24px 22px 22px;display:flex;flex-direction:column;flex:1}
+.species-group{font:600 .67rem/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--reef-sea)}
+.species-body h3{font-size:1.55rem;line-height:1.12;letter-spacing:-.025em;margin:9px 0 3px;color:var(--reef-ink)}
+.scientific-name{color:#6a7f85;margin:0 0 14px;font-size:.92rem}
+.species-body>p:not(.scientific-name){color:#4e666e;font-size:.91rem;line-height:1.65;margin-bottom:18px}
+.species-body dl{border-top:1px solid #e4edeb;margin:auto 0 0;padding-top:14px}
+.species-body dl div{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:7px 0}
+.species-body dt{font:600 .63rem/1.4 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#779095}
+.species-body dd{font-size:.82rem;line-height:1.45;color:#334f57;margin:0}
+.empty-state{border:1px dashed #bfd4d1;background:var(--reef-mist);padding:44px;text-align:center;margin-top:24px}
+.empty-state h3{margin:0 0 8px;color:var(--reef-ink)}
+.empty-state p{margin:0;color:var(--reef-muted)}
+
+.reef-ethics{padding:100px 0;background:var(--reef-deep);color:#fff}
+.reef-ethics-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.reef-ethics .tag{color:#bce7df;border-color:#4a7478}
+.reef-ethics h2{color:#fff;margin-bottom:0}
+.ethics-list{border-top:1px solid rgba(255,255,255,.22)}
+.ethics-list p{padding:20px 0;margin:0;border-bottom:1px solid rgba(255,255,255,.16);color:#d5e5e6;line-height:1.65}
+.ethics-list strong{color:#fff}
+
+.species-contribute{padding:88px 0;background:var(--reef-mist)}
+.species-contribute-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:60px;align-items:end}
+.species-contribute h2{max-width:900px;margin-bottom:18px}
+.species-contribute p{max-width:760px;color:#49626a;line-height:1.7}
+
+@media(max-width:980px){
+  .species-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .species-intro-grid,.reef-ethics-grid{grid-template-columns:1fr;gap:40px}
+  .species-contribute-inner{grid-template-columns:1fr;gap:28px;align-items:start}
+}
+
+@media(max-width:640px){
+  .species-hero{min-height:78vh;background-position:58% center}
+  .species-hero-inner{padding-top:115px;padding-bottom:58px}
+  .species-hero h1{font-size:clamp(3.2rem,17vw,5rem)}
+  .species-intro,.species-directory,.reef-ethics{padding:72px 0}
+  .species-grid{grid-template-columns:1fr;gap:18px}
+  .species-filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+  .species-filters::-webkit-scrollbar{display:none}
+  .filter-button{white-space:nowrap}
+  .species-body{padding:21px 19px 20px}
+  .species-body dl div{grid-template-columns:70px 1fr}
+  .species-contribute{padding:70px 0}
+}
