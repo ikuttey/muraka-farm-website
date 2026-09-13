@@ -1,4 +1,24 @@
 (function () {
+  function ensureSpeciesNavLink() {
+    const nav = document.getElementById('primaryNav');
+    if (!nav || nav.querySelector('a[href="reef-species.html"]')) return;
+
+    const list = nav.querySelector('ul');
+    const dharavandhooLink = list && list.querySelector('a[href="dharavandhoo.html"]');
+    if (!list || !dharavandhooLink) return;
+
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = 'reef-species.html';
+    link.textContent = 'House Reef Species';
+    item.appendChild(link);
+
+    const dharavandhooItem = dharavandhooLink.closest('li');
+    dharavandhooItem.insertAdjacentElement('afterend', item);
+  }
+
+  ensureSpeciesNavLink();
+
   const videoFrames = Array.from(
     document.querySelectorAll('iframe[src*="youtube.com/embed/"]')
   );
