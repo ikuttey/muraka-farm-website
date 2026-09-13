@@ -1,6 +1,31 @@
 (function(){
-  const toggle=document.querySelector('.nav-toggle');
   const nav=document.getElementById('primaryNav');
+  if(nav&&!nav.querySelector('a[href="reef-species.html"]')){
+    const list=nav.querySelector('ul');
+    const dharavandhooLink=list&&list.querySelector('a[href="dharavandhoo.html"]');
+    if(list&&dharavandhooLink){
+      const item=document.createElement('li');
+      const link=document.createElement('a');
+      link.href='reef-species.html';
+      link.textContent='House Reef Species';
+      if(location.pathname.endsWith('/reef-species.html')||location.pathname.endsWith('reef-species.html'))link.setAttribute('aria-current','page');
+      item.append(link);
+      const dharavandhooItem=dharavandhooLink.closest('li');
+      dharavandhooItem.insertAdjacentElement('afterend',item);
+    }
+  }
+
+  if((location.pathname.endsWith('/dharavandhoo.html')||location.pathname.endsWith('dharavandhoo.html'))&&!document.querySelector('.house-reef-guide-cta')){
+    const experiences=document.getElementById('experiences');
+    if(experiences){
+      const section=document.createElement('section');
+      section.className='visit-cta house-reef-guide-cta';
+      section.innerHTML='<div class="wrap visit-cta-inner"><div><span class="tag">Dharavandhoo house reef</span><h2>Meet the marine life of our house reef.</h2><p>Explore Muraka Farm\'s growing field guide to turtles, sharks, rays, reef fish, corals and other organisms recorded around Dharavandhoo.</p></div><a class="btn primary" href="reef-species.html">Explore house reef species →</a></div>';
+      experiences.insertAdjacentElement('beforebegin',section);
+    }
+  }
+
+  const toggle=document.querySelector('.nav-toggle');
   if(toggle&&nav){
     const setOpen=open=>{
       nav.classList.toggle('is-open',open);
