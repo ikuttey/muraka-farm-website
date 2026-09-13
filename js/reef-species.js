@@ -1,6 +1,21 @@
 (() => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.getElementById('primaryNav');
+
+  if (nav && !nav.querySelector('a[href="reef-species.html"]')) {
+    const list = nav.querySelector('ul');
+    const dharavandhooLink = list && list.querySelector('a[href="dharavandhoo.html"]');
+    if (list && dharavandhooLink) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = 'reef-species.html';
+      link.textContent = 'House Reef Species';
+      link.setAttribute('aria-current', 'page');
+      item.appendChild(link);
+      dharavandhooLink.closest('li').insertAdjacentElement('afterend', item);
+    }
+  }
+
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       const open = toggle.getAttribute('aria-expanded') === 'true';
